@@ -1,32 +1,32 @@
-# 中国主题点阵风景：15个已生成案例
+# 中国主题ASCII动画：15个案例依据
 
-这份记录对应当前15张成图及其提示词，顺序与 `examples/manifest.json` 一致。15种 `base` 表示借鉴的绘制方法与表现重点，不是必须照搬的地点、物件或构图模板。
+这份记录保存15个主题的实景出处、美术方向和绘制重点。方法ID用于迁移绘制方法，不照搬原主题、物件或构图。最终成果在 [真实字符画廊](../examples/index.html)播放，状态见 [manifest.json](../examples/manifest.json)。
 
-证据照片用于确认主题、地标身份、核心要素与空间关系。地点创作可以重新取景、组织近中远层次、简化杂物、调整色光，并在声明后改变昼夜氛围；必须保持地标身份与关键关系。上传图片转绘若用户要求忠实构图，应遵从该要求。
+来源照片用于求证身份、数量、地形和空间，不冻结最终取景与光照。地点创作可以重新构图、美化并记录艺术化改变；上传图默认保留原结构。地月例为中国探月工程影像题材，非中国境内风景。
 
-本组为AI生成的点阵风景艺术，非现场摄影、测绘复原或精确历史时刻再现。15张PNG和完整提示词均已生成；**已完成一次独立静帧看图复核**，未发现明显的核心地标身份、主要空间或主体数量错误；不等于测绘级复原或细节全部确认。来源核实与成图审查是两项不同的工作。
+已有15张AI生成PNG仅作内部构图、色光与采样素材。此前有限目视核对只覆盖这些内部内容基准，不计为ASCII成果、不证明字符化后的效果合格。保留的未确认项见 [检查边界](visual-review.md)。
 
-画廊的局部圆点水纹／雨点层另见[画廊](../examples/index.html)及其[配置](../examples/manifest.json)：在明确区域中低亮度叠加，静帧本身为完整作品；其余类型可静态展示。这里不宣称完成15套完整动画。
+规格为208×117字符、目标调度15fps、最多64色，实际帧率取决于环境。15例实际字符画面已逐个查看，短段播放均有时间推进与画面变化，缩略图均实际生成且使用同一字符渲染。三亚WebM已导出播放验证；其余14例视频导出与MP4分支未逐一检查。详见 [核验范围](visual-review.md)。
 
-下列来源作者与日期来自已核实的来源记录；武汉采用新华社2021年7月11日晚霞资料。未知日期及冲突直接注明，不把刊登日、上传日或路径日期当拍摄日。原摄影仅链接作为证据，不随这些记录分发。
+来源作者和日期沿用已核实记录；未知或冲突直接注明，不把上传日或路径日期当拍摄日。第三方原始照片仅链接作为证据，不随包分发。
 
-| 作品 | 借鉴方法 | 成图与提示词 |
+| 主题 | 借鉴方法 | 实际字符画廊 |
 | --- | --- | --- |
-| 边坝黑湖 · 雪岭初光 | `alpine-dawn` | [PNG](../examples/bianba-lake/image.png) · [提示词](../examples/bianba-lake/prompt.txt) |
-| 漠河北极村 · 红色极光 | `aurora-fjord` | [PNG](../examples/mohe-aurora/image.png) · [提示词](../examples/mohe-aurora/prompt.txt) |
-| 分界洲岛 · 蓝色珊瑚花园 | `deep-reef` | [PNG](../examples/fenjiezhou-reef/image.png) · [提示词](../examples/fenjiezhou-reef/prompt.txt) |
-| 敦煌月牙泉 · 沙山星夜 | `desert-night` | [PNG](../examples/dunhuang-crescent/image.png) · [提示词](../examples/dunhuang-crescent/prompt.txt) |
-| 中国探月工程 · 地月遥望 | `earthrise` | [PNG](../examples/earth-moon/image.png) · [提示词](../examples/earth-moon/prompt.txt) |
-| 武汉黄鹤楼 · 江城暮色 | `kyoto-dusk` | [PNG](../examples/wuhan-yellow-crane/image.png) · [提示词](../examples/wuhan-yellow-crane/prompt.txt) |
-| 南京白鹭洲 · 秦淮灯影 | `lantern-lake` | [PNG](../examples/qinhuai-lanterns/image.png) · [提示词](../examples/qinhuai-lanterns/prompt.txt) |
-| 上海外滩 · 浦江夜色 | `marine-drive` | [PNG](../examples/shanghai-bund/image.png) · [提示词](../examples/shanghai-bund/prompt.txt) |
-| 张家界天子山 · 雾谷 | `misty-forest` | [PNG](../examples/zhangjiajie-mist/image.png) · [提示词](../examples/zhangjiajie-mist/prompt.txt) |
-| 深圳大梅沙 · 羽翼海岸 | `night-coast` | [PNG](../examples/dameisha-night/image.png) · [提示词](../examples/dameisha-night/prompt.txt) |
-| 三亚湾 · 云隙余晖 | `ocean-sunset` | [PNG](../examples/sanya-sunset/image.png) · [提示词](../examples/sanya-sunset/prompt.txt) |
-| 呼伦贝尔 · 风暴前缘 | `storm-plains` | [PNG](../examples/hulunbuir-storm/image.png) · [提示词](../examples/hulunbuir-storm/prompt.txt) |
-| 北京北海 · 白塔晨光 | `taj-dawn` | [PNG](../examples/beihai-dawn/image.png) · [提示词](../examples/beihai-dawn/prompt.txt) |
-| 香港旺角 · 雨中市集 | `tokyo-rain` | [PNG](../examples/mongkok-rain/image.png) · [提示词](../examples/mongkok-rain/prompt.txt) |
-| 深圳湾文化广场 · 暮色原石 | `varanasi-ghats` | [PNG](../examples/shenzhen-bay/image.png) · [提示词](../examples/shenzhen-bay/prompt.txt) |
+| 边坝黑湖 · 雪岭初光 | `alpine-dawn` | [查看字符演示](../examples/index.html?scene=bianba-lake) |
+| 漠河北极村 · 红色极光 | `aurora-fjord` | [查看字符演示](../examples/index.html?scene=mohe-aurora) |
+| 分界洲岛 · 蓝色珊瑚花园 | `deep-reef` | [查看字符演示](../examples/index.html?scene=fenjiezhou-reef) |
+| 敦煌月牙泉 · 沙山星夜 | `desert-night` | [查看字符演示](../examples/index.html?scene=dunhuang-crescent) |
+| 中国探月工程 · 地月遥望 | `earthrise` | [查看字符演示](../examples/index.html?scene=earth-moon) |
+| 武汉黄鹤楼 · 江城暮色 | `kyoto-dusk` | [查看字符演示](../examples/index.html?scene=wuhan-yellow-crane) |
+| 南京白鹭洲 · 秦淮灯影 | `lantern-lake` | [查看字符演示](../examples/index.html?scene=qinhuai-lanterns) |
+| 上海外滩 · 浦江夜色 | `marine-drive` | [查看字符演示](../examples/index.html?scene=shanghai-bund) |
+| 张家界天子山 · 雾谷 | `misty-forest` | [查看字符演示](../examples/index.html?scene=zhangjiajie-mist) |
+| 深圳大梅沙 · 羽翼海岸 | `night-coast` | [查看字符演示](../examples/index.html?scene=dameisha-night) |
+| 三亚湾 · 云隙余晖 | `ocean-sunset` | [查看字符演示](../examples/index.html?scene=sanya-sunset) |
+| 呼伦贝尔 · 风暴前缘 | `storm-plains` | [查看字符演示](../examples/index.html?scene=hulunbuir-storm) |
+| 北京北海 · 白塔晨光 | `taj-dawn` | [查看字符演示](../examples/index.html?scene=beihai-dawn) |
+| 香港旺角 · 雨中市集 | `tokyo-rain` | [查看字符演示](../examples/index.html?scene=mongkok-rain) |
+| 深圳湾文化广场 · 暮色原石 | `varanasi-ghats` | [查看字符演示](../examples/index.html?scene=shenzhen-bay) |
 
 ## 01 · 边坝黑湖 · 雪岭初光
 
@@ -34,7 +34,7 @@
 
 冷蓝湖湾映照雪岭，暖光沿坡面缓缓展开。
 
-[查看成图 PNG](../examples/bianba-lake/image.png) · [完整提示词](../examples/bianba-lake/prompt.txt) · [画廊大图](../examples/index.html?scene=bianba-lake)
+[查看实际字符画廊](../examples/index.html?scene=bianba-lake)
 
 **来源与日期：** [原来源页面](https://www.xinhuanet.com/photo/2022-04/04/c_1128531198.htm)；新华社记者周荻潇。拍摄：2022-04-02；刊登或上传：2022-04-04。日间无人机照片用于核实雪岭、湖湾、岩坡与局部倒影；晨光为声明的艺术设定。
 
@@ -51,7 +51,7 @@
 - 日间参考改为艺术设定晨光
 - 压低杂乱近岸细节，强化雪岭与湖湾的主次
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 山体迎背光冷暖分面
 - 按湖域限定局部倒影
@@ -63,7 +63,9 @@
 - 近景巨大松树、木屋等无依据物件
 - 整幅上下镜像的山湖构图
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 02 · 漠河北极村 · 红色极光
 
@@ -71,7 +73,7 @@
 
 红色光柱升起，低矮雪岸下留出安静的暗部。
 
-[查看成图 PNG](../examples/mohe-aurora/image.png) · [完整提示词](../examples/mohe-aurora/prompt.txt) · [画廊大图](../examples/index.html?scene=mohe-aurora)
+[查看实际字符画廊](../examples/index.html?scene=mohe-aurora)
 
 **来源与日期：** [原来源页面](https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/c.html)；郭昕宇／新华社。拍摄：2026-01-20；刊登或上传：2026-01-21。拍摄为北京时间1月20日晚的冬季极光事件；不将极光描述为漠河日常必见景观。
 
@@ -88,7 +90,7 @@
 - 整理光幕的明暗节奏与画面留黑
 - 雪地细节简化，保持冷色层次
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 柔光帘幕的层叠密度
 - 纵向色带与边缘辉光
@@ -100,7 +102,9 @@
 - 红木屋、窗灯与烟囱
 - 原固定绿色S形光幕与开放水面镜像
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 03 · 分界洲岛 · 蓝色珊瑚花园
 
@@ -108,7 +112,7 @@
 
 层叠桌状珊瑚向蓝水伸展，鱼影疏密有序。
 
-[查看成图 PNG](../examples/fenjiezhou-reef/image.png) · [完整提示词](../examples/fenjiezhou-reef/prompt.txt) · [画廊大图](../examples/index.html?scene=fenjiezhou-reef)
+[查看实际字符画廊](../examples/index.html?scene=fenjiezhou-reef)
 
 **来源与日期：** [原来源页面](https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/c.html)；新华社记者张丽芸。拍摄：2023-06-08；刊登或上传：2026-06-07。拍摄日期与文章刊登日期不同；地点为分界洲岛附近海域，非全年水下能见度保证。
 
@@ -125,7 +129,7 @@
 - 减少杂乱鱼影，强调主珊瑚的层叠结构
 - 采用更清楚的蓝水渐变与上方环境光
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 水下距离色衰减
 - 珊瑚薄缘与遮挡分层
@@ -137,7 +141,9 @@
 - 中心白沙走廊与对称礁丘阵列
 - 预设密集编队鱼群、气泡串和太阳圆盘
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 04 · 敦煌月牙泉 · 沙山星夜
 
@@ -145,7 +151,7 @@
 
 叠檐楼阁与左前泉水，在蓝紫夜色中互相映照。
 
-[查看成图 PNG](../examples/dunhuang-crescent/image.png) · [完整提示词](../examples/dunhuang-crescent/prompt.txt) · [画廊大图](../examples/index.html?scene=dunhuang-crescent)
+[查看实际字符画廊](../examples/index.html?scene=dunhuang-crescent)
 
 **来源与日期：** [原来源页面](https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/c.html)；新华社记者梁军。拍摄：2024-08-24；刊登或上传：2024-09-17。正文第二张月牙泉白昼照片；用于核实泉水、楼阁、植被、沙山关系，蓝调星夜与局部暖灯为艺术设定。
 
@@ -162,7 +168,7 @@
 - 白昼证据改为艺术设定蓝调星夜
 - 简化游客与栏杆，强化沙脊、泉水和叠檐轮廓
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 有序点阵表现沙坡明暗与亮脊
 - 星点与沙面采用不同密度组织
@@ -174,7 +180,9 @@
 - 原固定银河弧线与远镇灯火
 - 自动流星、凭空大月亮
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 05 · 中国探月工程 · 地月遥望
 
@@ -182,7 +190,7 @@
 
 地球与小月球悬于留黑之中，保留真实影像的尺度关系。
 
-[查看成图 PNG](../examples/earth-moon/image.png) · [完整提示词](../examples/earth-moon/prompt.txt) · [画廊大图](../examples/index.html?scene=earth-moon)
+[查看实际字符画廊](../examples/index.html?scene=earth-moon)
 
 **来源与日期：** [原来源页面](https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/content.html)；国家航天局；中国探月工程再入返回飞行试验器服务舱相机。拍摄：2014-11-09；刊登或上传：2014-11-10。官网记载拍摄时刻16:00，未单列时区；这是中国航天相关太空影像，不是中国境内地景或月面地球升起。
 
@@ -199,7 +207,7 @@
 - 重排宽画幅留黑以适应展示
 - 不补画原影像没有的大陆、月面或探测器
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 球面明暗与细圆点覆盖率
 - 边缘受光和高光控制
@@ -211,7 +219,9 @@
 - 月球车、旗帜、探测器等未见设备
 - 随机大陆、装饰星群和银河
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 06 · 武汉黄鹤楼 · 江城暮色
 
@@ -219,9 +229,9 @@
 
 金色重檐立于蛇山，长江与大桥在暮色后景中展开。
 
-[查看成图 PNG](../examples/wuhan-yellow-crane/image.png) · [完整提示词](../examples/wuhan-yellow-crane/prompt.txt) · [画廊大图](../examples/index.html?scene=wuhan-yellow-crane)
+[查看实际字符画廊](../examples/index.html?scene=wuhan-yellow-crane)
 
-**来源与日期：** [原来源页面](https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm)；陈建／赵广亮，新华社。拍摄：2021-07-11；刊登或上传：未知／未在本记录确认。已核实该页与对应晚霞照片的黄鹤楼、长江和大桥关系，未把网址日期直接当作拍摄日期。
+**来源与日期：** [原来源页面](https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm)；陈建／赵广亮，新华社。拍摄：2021-07-11；刊登或上传：未知／未在记录确认。已核实该页与对应晚霞照片的黄鹤楼、长江和大桥关系，未把网址日期直接当作拍摄日期。
 
 **已核实要素：**
 
@@ -236,7 +246,7 @@
 - 强调主楼并精简杂乱城市细节
 - 选取蓝紫暮色与金色楼檐的冷暖对比
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 暮色实体与阴影分区
 - 细屋檐轮廓和暖光密度
@@ -248,7 +258,9 @@
 - 日式石灯、鸟居与樱花模板
 - 凭空塔前池塘或富士山
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 07 · 南京白鹭洲 · 秦淮灯影
 
@@ -256,7 +268,7 @@
 
 园林湖湾、桥与沿岸灯组，在深蓝水面中形成暖光节奏。
 
-[查看成图 PNG](../examples/qinhuai-lanterns/image.png) · [完整提示词](../examples/qinhuai-lanterns/prompt.txt) · [画廊大图](../examples/index.html?scene=qinhuai-lanterns)
+[查看实际字符画廊](../examples/index.html?scene=qinhuai-lanterns)
 
 **来源与日期：** [原来源页面](https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/c.html?page=4)；新华社记者李博。拍摄：2025-01-21；刊登或上传：2025-01-22。第39届秦淮灯会白鹭洲公园展区无人机照片；拍摄精确时刻未知，灯光已亮。
 
@@ -274,7 +286,7 @@
 - 减少拥挤灯组，留下清楚的暖光主次
 - 强化蓝调夜空与湖面深色层次
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 发光本体与局部光晕
 - 水域限定的碎亮倒影
@@ -286,7 +298,9 @@
 - 原野湖高山与云杉林
 - 统一水平水线及满湖漂灯
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 08 · 上海外滩 · 浦江夜色
 
@@ -294,9 +308,9 @@
 
 东方明珠与陆家嘴楼群的光，落入断续的江面倒影。
 
-[查看成图 PNG](../examples/shanghai-bund/image.png) · [完整提示词](../examples/shanghai-bund/prompt.txt) · [画廊大图](../examples/index.html?scene=shanghai-bund)
+[查看实际字符画廊](../examples/index.html?scene=shanghai-bund)
 
-**来源与日期：** [原来源页面](https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg)；David Zhang。拍摄：2018-04-17；刊登或上传：未知／未在本记录确认。Commons原始摄影记录，CC BY-SA 2.0；原Flickr照片页41199899084。相机EXIF时间不当作上海本地夜间时刻；不代表当前固定照明方案。
+**来源与日期：** [原来源页面](https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg)；David Zhang。拍摄：2018-04-17；刊登或上传：未知／未在记录确认。Commons原始摄影记录，CC BY-SA 2.0；原Flickr照片页41199899084。相机EXIF时间不当作上海本地夜间时刻；不代表当前固定照明方案。
 
 **已核实要素：**
 
@@ -312,7 +326,7 @@
 - 整理次要窗光，降低建筑底部拥挤感
 - 保留全景的深色天空与克制紫红/金蓝灯色
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 城市灯链和远近光点尺度
 - 对应灯源的碎亮反射
@@ -324,7 +338,9 @@
 - 重复路灯链、预设月亮与船阵
 - 按物理高度排行而忽略透视的示意天际线
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 09 · 张家界天子山 · 雾谷
 
@@ -332,9 +348,9 @@
 
 不等高的石柱在雾中显隐，近壁与阔叶形成空间层次。
 
-[查看成图 PNG](../examples/zhangjiajie-mist/image.png) · [完整提示词](../examples/zhangjiajie-mist/prompt.txt) · [画廊大图](../examples/index.html?scene=zhangjiajie-mist)
+[查看实际字符画廊](../examples/index.html?scene=zhangjiajie-mist)
 
-**来源与日期：** [原来源页面](https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg)；Rocio Gil／Commons用户Dewxio。拍摄：2017-06-23；刊登或上传：未知／未在本记录确认。Commons本人摄影，CC BY-SA 4.0；拍摄于天子山浓雾环境，未核实日出时刻。竖幅证据可重新组织画幅。
+**来源与日期：** [原来源页面](https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg)；Rocio Gil／Commons用户Dewxio。拍摄：2017-06-23；刊登或上传：未知／未在记录确认。Commons本人摄影，CC BY-SA 4.0；拍摄于天子山浓雾环境，未核实日出时刻。竖幅证据可重新组织画幅。
 
 **已核实要素：**
 
@@ -350,7 +366,7 @@
 - 整理雾谷层次与画幅，保留真实地貌特征
 - 克制低对比晨雾色调，不添加太阳盘
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 远到近遮罩和空气透视
 - 雾量按谷地与轮廓分布
@@ -362,7 +378,9 @@
 - 未经依据的太阳圆盘和强烈光束
 - 等高等距排列的石柱
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 10 · 深圳大梅沙 · 羽翼海岸
 
@@ -370,9 +388,9 @@
 
 七座彩色羽翼人停在沙滩后排，银蓝浪带向远处延伸。
 
-[查看成图 PNG](../examples/dameisha-night/image.png) · [完整提示词](../examples/dameisha-night/prompt.txt) · [画廊大图](../examples/index.html?scene=dameisha-night)
+[查看实际字符画廊](../examples/index.html?scene=dameisha-night)
 
-**来源与日期：** [原来源页面](https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964)；武仲林摄影，廖晨撰文／旅拍网。拍摄：未知／未定；刊登或上传：未知／未在本记录确认。拍摄日期未公开，图像路径日期不作拍摄日期。深圳市城管局资料另确认沙滩东部七座飞人雕塑；蓝调夜景和雕塑暖反光为艺术设定。
+**来源与日期：** [原来源页面](https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964)；武仲林摄影，廖晨撰文／旅拍网。拍摄：未知／未定；刊登或上传：未知／未在记录确认。拍摄日期未公开，图像路径日期不作拍摄日期。深圳市城管局资料另确认沙滩东部七座飞人雕塑；蓝调夜景和雕塑暖反光为艺术设定。
 
 **已核实要素：**
 
@@ -389,7 +407,7 @@
 - 简化拥挤游客与帐篷，突出雕塑和海岸
 - 雕塑局部暖反光用于塑造可辨轮廓
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 主体与海水材质遮罩
 - 冷暗海面与浅色浪带分级
@@ -401,7 +419,9 @@
 - 预设远岛、浮标闪灯和大月亮
 - 复制姿态的人物雕塑或立在水中的雕塑
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 11 · 三亚湾 · 云隙余晖
 
@@ -409,7 +429,7 @@
 
 厚云间的一线橙光，将海面与近岸浪花连成层次。
 
-[查看成图 PNG](../examples/sanya-sunset/image.png) · [完整提示词](../examples/sanya-sunset/prompt.txt) · [画廊大图](../examples/index.html?scene=sanya-sunset)
+[查看实际字符画廊](../examples/index.html?scene=sanya-sunset)
 
 **来源与日期：** [原来源页面](https://commons.wikimedia.org/wiki/File:三亞灣日落4.jpg)；Kitabc12345／Wikimedia Commons本人摄影。拍摄：未知／未定；刊登或上传：2020-09-07。CC0 1.0；页面Summary写2020-08-22，Metadata写2020-08-21 19:05，保留一天日期冲突，不强定某日。2020-09-07为上传日。
 
@@ -427,7 +447,7 @@
 - 增强云隙冷暖与近岸层次
 - 简化小人物，去掉与主题无关的细碎干扰
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 天空色场与厚云分层
 - 海面采样天空光色
@@ -439,7 +459,9 @@
 - 帆船与巨大完整太阳圆盘
 - 无依据的椰树框景、刻字巨石和灯塔
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段播放与同源缩略图已检查。三亚WebM已实际导出并播放到末尾：4.88秒、62帧；MP4与无缝循环未验证。
 
 ## 12 · 呼伦贝尔 · 风暴前缘
 
@@ -447,9 +469,9 @@
 
 厚云压过低平田野，雨幡透出远处暖光。
 
-[查看成图 PNG](../examples/hulunbuir-storm/image.png) · [完整提示词](../examples/hulunbuir-storm/prompt.txt) · [画廊大图](../examples/index.html?scene=hulunbuir-storm)
+[查看实际字符画廊](../examples/index.html?scene=hulunbuir-storm)
 
-**来源与日期：** [原来源页面](https://www.photoworld.com.cn/post/144452)；刘屹靖摄影并文／《摄影世界》。拍摄：2020-08-01；刊登或上传：未知／未在本记录确认。第04张图注为内蒙古呼伦贝尔弧状积雨云／超级雷暴单体；具体旗县、道路与拍摄时刻未知，不独立保证气象分类或未做后期。
+**来源与日期：** [原来源页面](https://www.photoworld.com.cn/post/144452)；刘屹靖摄影并文／《摄影世界》。拍摄：2020-08-01；刊登或上传：未知／未在记录确认。第04张图注为内蒙古呼伦贝尔弧状积雨云／超级雷暴单体；具体旗县、道路与拍摄时刻未知，不独立保证气象分类或未做后期。
 
 **已核实要素：**
 
@@ -466,7 +488,7 @@
 - 强化云体亮暗分面与温暖雨幕后景
 - 精简路边杂物，不改变公路与电杆透视
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 云体法线明暗与亮云缘
 - 雨幕半透明衰减和纵纹
@@ -478,7 +500,9 @@
 - 金色麦穗、近景马群和金合欢树
 - 自动闪电、固定云塔坐标和龙卷风
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 13 · 北京北海 · 白塔晨光
 
@@ -486,9 +510,9 @@
 
 暖光掠过白塔，岛丘树影与临水长廊分出三层。
 
-[查看成图 PNG](../examples/beihai-dawn/image.png) · [完整提示词](../examples/beihai-dawn/prompt.txt) · [画廊大图](../examples/index.html?scene=beihai-dawn)
+[查看实际字符画廊](../examples/index.html?scene=beihai-dawn)
 
-**来源与日期：** [原来源页面](https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/)；zhang kaiyv／Pexels，照片14752023。拍摄：未知／未定；刊登或上传：未知／未在本记录确认。作者页面标注Beijing与sunrise，拍摄年月日未知；静止表面是水或冰尚不确定，不据此承诺流动水纹。
+**来源与日期：** [原来源页面](https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/)；zhang kaiyv／Pexels，照片14752023。拍摄：未知／未定；刊登或上传：未知／未在记录确认。作者页面标注Beijing与sunrise，拍摄年月日未知；静止表面是水或冰尚不确定，不据此承诺流动水纹。
 
 **已核实要素：**
 
@@ -505,7 +529,7 @@
 - 采用克制清晨冷暖侧光
 - 简化不清楚湖面纹理，不宣称水或冰的实测状态
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 白色材质的明暗体积
 - 高光压缩保留细节
@@ -517,7 +541,9 @@
 - 无依据的太阳盘与浓粉雾
 - 将白塔替换成通用楼阁式宝塔
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 14 · 香港旺角 · 雨中市集
 
@@ -525,9 +551,9 @@
 
 层叠篷布、密集立面与伞群，在湿路上留下冷暖反光。
 
-[查看成图 PNG](../examples/mongkok-rain/image.png) · [完整提示词](../examples/mongkok-rain/prompt.txt) · [画廊大图](../examples/index.html?scene=mongkok-rain)
+[查看实际字符画廊](../examples/index.html?scene=mongkok-rain)
 
-**来源与日期：** [原来源页面](https://px3.fr/winners/hm/2024/1-114188-24/)；Ho Chung Howard Tong（Howard手機攝）／PX3摄影作品页。拍摄：2023-07-16；刊登或上传：未知／未在本记录确认。作品题名Mong Kok Market On A Rainy Night；只能确认旺角市集范围，具体街名与曝光时刻未知。
+**来源与日期：** [原来源页面](https://px3.fr/winners/hm/2024/1-114188-24/)；Ho Chung Howard Tong（Howard手機攝）／PX3摄影作品页。拍摄：2023-07-16；刊登或上传：未知／未在记录确认。作品题名Mong Kok Market On A Rainy Night；只能确认旺角市集范围，具体街名与曝光时刻未知。
 
 **已核实要素：**
 
@@ -544,7 +570,7 @@
 - 整理杂乱立面与不可辨招牌
 - 强化湿路与篷布的冷暖主次
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 深度遮挡与透视收敛
 - 湿路反射的横向扰动与打断
@@ -556,7 +582,9 @@
 - 原东京空巷与独自行人轨迹
 - 默认粉紫霓虹阵列或虚构具体街名
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。
 
 ## 15 · 深圳湾文化广场 · 暮色原石
 
@@ -564,7 +592,7 @@
 
 原石建筑、春笋与春茧相互呼应，折岸暖光映入水面。
 
-[查看成图 PNG](../examples/shenzhen-bay/image.png) · [完整提示词](../examples/shenzhen-bay/prompt.txt) · [画廊大图](../examples/index.html?scene=shenzhen-bay)
+[查看实际字符画廊](../examples/index.html?scene=shenzhen-bay)
 
 **来源与日期：** [原来源页面](https://www.gooood.cn/shenzhen-bay-cultural-square-by-mad.htm)；朱雨蒙摄影，MAD提供／gooood谷德。拍摄：未知／未定；刊登或上传：2025-09-30。拍摄日与季节未公开；刊登日不作拍摄日。MAD官方同构图及白昼广角资料辅助确认建筑与园地关系。
 
@@ -583,7 +611,7 @@
 - 采用蓝紫暮色与克制金色灯光
 - 精简次要楼群，强化白色体量和暗绿园地对比
 
-**移植方法与表现重点：**
+**迁移方法与表现重点：**
 
 - 暮色冷暗层次与暖光簇
 - 石材/园地/建筑材质分区
@@ -595,4 +623,6 @@
 - 祭灯火焰、漂流diyas和划桨小舟
 - 水上无实物来源的暖灯点及预设神庙遮阳伞
 
-**状态：** 成图PNG与实际提示词已保存；已看图复核，未发现明显核心错项。核验边界与未确认项见[复核说明](visual-review.md)。
+**内部基准：** 已有AI生成PNG及其实际提示词，供内部构图/采样；此前检查仅覆盖该素材的内容。文件、指纹与记录见 [证据JSON](china-cases.json)，不作成品下载或效果封面。
+
+**最终成果状态：** 实际字符画面、短段时间推进与帧变化已检查，缩略图来自同一字符渲染。本例视频未逐一导出验证；不能沿用内部PNG作为效果承诺。

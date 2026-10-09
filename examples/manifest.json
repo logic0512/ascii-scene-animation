@@ -20,34 +20,63 @@
       "远景空气透视与沙岩有序点阵"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0.43,
-            0.63
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0.43,
+                0.63
+              ],
+              [
+                0.5,
+                0.63
+              ],
+              [
+                0.55,
+                0.65
+              ],
+              [
+                0.58,
+                0.69
+              ],
+              [
+                0.52,
+                0.74
+              ],
+              [
+                0.46,
+                0.74
+              ]
+            ]
           ],
-          [
-            0.5,
-            0.63
+          "protected": []
+        },
+        {
+          "type": "clouds",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.15
+              ],
+              [
+                0,
+                0.15
+              ]
+            ]
           ],
-          [
-            0.55,
-            0.65
-          ],
-          [
-            0.58,
-            0.69
-          ],
-          [
-            0.52,
-            0.74
-          ],
-          [
-            0.46,
-            0.74
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://www.xinhuanet.com/photo/2022-04/04/c_1128531198.htm",
@@ -60,10 +89,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "9ea26c0e7f0d40bb94c717adcc1b641466f169dacf2a451c709375884783376d",
     "image_dimensions": [
       1672,
@@ -82,7 +112,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "bianba-lake",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "mohe-aurora",
@@ -105,7 +159,56 @@
       "冷暗雪地与发光天空分离"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "aurora",
+          "regions": [
+            [
+              [
+                0,
+                0.06
+              ],
+              [
+                1,
+                0.06
+              ],
+              [
+                1,
+                0.5700000000000001
+              ],
+              [
+                0,
+                0.5700000000000001
+              ]
+            ]
+          ],
+          "protected": []
+        },
+        {
+          "type": "stars",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.2
+              ],
+              [
+                0,
+                0.2
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/c.html",
     "source_image": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/20260121555b3a52a8c447a3a134b5b41ef986a1_81d16afda76c4122994266a9bc6f0db0.JPG",
@@ -117,10 +220,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "32d4c60100adeb540dd84c02a49f1bb8c84ad89397ac2841dcf8648aec50d1ae",
     "image_dimensions": [
       1672,
@@ -139,7 +243,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "mohe-aurora",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "fenjiezhou-reef",
@@ -162,7 +290,32 @@
       "大小鱼影与不同材质点密度"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "reef",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.32
+              ],
+              [
+                0,
+                0.32
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/c.html",
     "source_image": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/20260607cdd95bc4c9684b47afcaa9590e2ad51d_20260607b1edfc89406044caa9956ee3a350d518.jpg",
@@ -174,10 +327,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "51c621378dab6ead0cf7cc98196018ef155a13c755dcca13d01ffc90da0e0ee4",
     "image_dimensions": [
       1672,
@@ -196,7 +350,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "fenjiezhou-reef",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "dunhuang-crescent",
@@ -220,7 +398,32 @@
       "水域反光与真实楼阁对应"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "stars",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.27
+              ],
+              [
+                0,
+                0.27
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/c.html",
     "source_image": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/20240917e25b785fd45b4ac293c3e124d0b1c2c1_33c7744811ae4da691b772d92d368ccb.JPG",
@@ -232,10 +435,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "131eacfc08dd266c487fc817dd3456011800bcc66c2ad50ed13123aff44876c1",
     "image_dimensions": [
       1672,
@@ -254,7 +458,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "dunhuang-crescent",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "earth-moon",
@@ -277,7 +505,52 @@
       "空间留黑与尺度对比"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "sphere",
+          "regions": [
+            [
+              [
+                0.56,
+                0.33
+              ],
+              [
+                0.66,
+                0.31
+              ],
+              [
+                0.74,
+                0.4
+              ],
+              [
+                0.78,
+                0.58
+              ],
+              [
+                0.73,
+                0.77
+              ],
+              [
+                0.62,
+                0.84
+              ],
+              [
+                0.51,
+                0.74
+              ],
+              [
+                0.46,
+                0.57
+              ],
+              [
+                0.49,
+                0.42
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/content.html",
     "source_image": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/part/6775112.jpg",
@@ -289,10 +562,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "a4264936081ed53c14b43035d35df877420ea75d84a88efab2ee07dd1749ca8e",
     "image_dimensions": [
       1672,
@@ -311,7 +585,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "earth-moon",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "wuhan-yellow-crane",
@@ -335,7 +633,56 @@
       "远城空气透视与明暗主次"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "clouds",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0.5,
+                0
+              ],
+              [
+                0.5,
+                0.23
+              ],
+              [
+                0,
+                0.23
+              ]
+            ]
+          ],
+          "protected": []
+        },
+        {
+          "type": "light",
+          "regions": [
+            [
+              [
+                0.63,
+                0.27
+              ],
+              [
+                0.9,
+                0.27
+              ],
+              [
+                0.9,
+                0.76
+              ],
+              [
+                0.63,
+                0.76
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm",
     "source_image": "https://uav.xinhuanet.com/2021-07/14/1211239344_16261727700621n.jpg",
@@ -347,10 +694,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "e3a2bb89b547670a632539dfd14286cfe7e042bb8b4f76f13735946d39d5ef03",
     "image_dimensions": [
       1672,
@@ -369,7 +717,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "wuhan-yellow-crane",
+        "observedFrames": 23,
+        "to": "1.467"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "qinhuai-lanterns",
@@ -393,38 +765,85 @@
       "暗树冠与暖灯簇的密度对比"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0.3,
-            0.43
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0.3,
+                0.43
+              ],
+              [
+                0.39,
+                0.41
+              ],
+              [
+                0.39,
+                0.49
+              ],
+              [
+                0.46,
+                0.51
+              ],
+              [
+                0.46,
+                0.56
+              ],
+              [
+                0.37,
+                0.55
+              ],
+              [
+                0.29,
+                0.5
+              ]
+            ]
           ],
-          [
-            0.39,
-            0.41
+          "protected": []
+        },
+        {
+          "type": "light",
+          "regions": [
+            [
+              [
+                0.04,
+                0.35
+              ],
+              [
+                0.29,
+                0.35
+              ],
+              [
+                0.29,
+                0.55
+              ],
+              [
+                0.04,
+                0.55
+              ]
+            ],
+            [
+              [
+                0.5,
+                0.31
+              ],
+              [
+                0.78,
+                0.31
+              ],
+              [
+                0.78,
+                0.52
+              ],
+              [
+                0.5,
+                0.52
+              ]
+            ]
           ],
-          [
-            0.39,
-            0.49
-          ],
-          [
-            0.46,
-            0.51
-          ],
-          [
-            0.46,
-            0.56
-          ],
-          [
-            0.37,
-            0.55
-          ],
-          [
-            0.29,
-            0.5
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/c.html?page=4",
@@ -437,10 +856,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "74ee2f609a05d7b7470d5c3e47adec4657605048e1136243d3c3b04f5d410656",
     "image_dimensions": [
       1672,
@@ -459,7 +879,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "qinhuai-lanterns",
+        "observedFrames": 23,
+        "to": "1.467"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "shanghai-bund",
@@ -483,26 +927,31 @@
       "暖冷灯色与暗天空分层"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0,
-            0.76
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0,
+                0.76
+              ],
+              [
+                1,
+                0.76
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
           ],
-          [
-            1,
-            0.76
-          ],
-          [
-            1,
-            1
-          ],
-          [
-            0,
-            1
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg",
@@ -515,10 +964,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "7d79aa3ef0ca5c8d389975315f66fbf8e3556291f9f2ca38a79d1c101ea6374e",
     "image_dimensions": [
       1672,
@@ -537,7 +987,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "shanghai-bund",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "zhangjiajie-mist",
@@ -561,7 +1035,81 @@
       "近林密点与远柱弱点对比"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "fog",
+          "regions": [
+            [
+              [
+                0.19,
+                0.64
+              ],
+              [
+                0.3,
+                0.6
+              ],
+              [
+                0.4,
+                0.72
+              ],
+              [
+                0.48,
+                0.63
+              ],
+              [
+                0.55,
+                0.68
+              ],
+              [
+                0.55,
+                0.94
+              ],
+              [
+                0.17,
+                0.94
+              ]
+            ]
+          ],
+          "protected": [
+            [
+              [
+                0.29,
+                0.31
+              ],
+              [
+                0.33999999999999997,
+                0.31
+              ],
+              [
+                0.33999999999999997,
+                0.7
+              ],
+              [
+                0.29,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.47,
+                0.35
+              ],
+              [
+                0.51,
+                0.35
+              ],
+              [
+                0.51,
+                0.69
+              ],
+              [
+                0.47,
+                0.69
+              ]
+            ]
+          ]
+        }
+      ]
     },
     "source_page": "https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
     "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
@@ -575,10 +1123,11 @@
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
       "limits": [
         "横幅扩展远柱为实景地貌启发的艺术重构；不宣称某一真实机位的逐峰复原。"
-      ]
+      ],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "4c9cedb8fe1eeb62a4d4dd399330c9eeccc8b6e71f3410e2a7d8c59b3e35d8e7",
     "image_dimensions": [
       1672,
@@ -597,7 +1146,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "zhangjiajie-mist",
+        "observedFrames": 24,
+        "to": "1.600"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "dameisha-night",
@@ -622,50 +1195,55 @@
       "不同尺度的浪点与雕塑亮部"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0.91,
-            0.39
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0.91,
+                0.39
+              ],
+              [
+                1,
+                0.38
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0.96,
+                0.99
+              ],
+              [
+                0.87,
+                0.91
+              ],
+              [
+                0.74,
+                0.82
+              ],
+              [
+                0.59,
+                0.7
+              ],
+              [
+                0.51,
+                0.57
+              ],
+              [
+                0.59,
+                0.52
+              ],
+              [
+                0.75,
+                0.44
+              ]
+            ]
           ],
-          [
-            1,
-            0.38
-          ],
-          [
-            1,
-            1
-          ],
-          [
-            0.96,
-            0.99
-          ],
-          [
-            0.87,
-            0.91
-          ],
-          [
-            0.74,
-            0.82
-          ],
-          [
-            0.59,
-            0.7
-          ],
-          [
-            0.51,
-            0.57
-          ],
-          [
-            0.59,
-            0.52
-          ],
-          [
-            0.75,
-            0.44
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964",
@@ -680,10 +1258,11 @@
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
       "limits": [
         "七座可辨，姿态有别；未逐座确认全部翼片曲线与四肢角度。"
-      ]
+      ],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "4dc6bcde68cb647d326c391b290559ab34ab2ddda9119ae1f2ed5588d4a490df",
     "image_dimensions": [
       1672,
@@ -708,7 +1287,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "dameisha-night",
+        "observedFrames": 23,
+        "to": "1.467"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "sanya-sunset",
@@ -732,30 +1335,59 @@
       "远细近粗的浪峰和碎亮点"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0,
-            0.58
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0,
+                0.58
+              ],
+              [
+                1,
+                0.58
+              ],
+              [
+                1,
+                0.73
+              ],
+              [
+                0.6,
+                0.84
+              ],
+              [
+                0,
+                0.94
+              ]
+            ]
           ],
-          [
-            1,
-            0.58
+          "protected": []
+        },
+        {
+          "type": "clouds",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.41
+              ],
+              [
+                0,
+                0.41
+              ]
+            ]
           ],
-          [
-            1,
-            0.73
-          ],
-          [
-            0.6,
-            0.84
-          ],
-          [
-            0,
-            0.94
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://commons.wikimedia.org/wiki/File:三亞灣日落4.jpg",
@@ -768,10 +1400,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "59fcca8d7102fe1aab5ee0cf73daa0d4fdad6e9a3b95bfbf42c0a5a6c12c9098",
     "image_dimensions": [
       1672,
@@ -790,7 +1423,44 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "sanya-sunset",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "verified",
+      "date": "2026-10-09",
+      "format": "WebM/VP9",
+      "duration_seconds": 4.878118,
+      "frames": 62,
+      "width": 2880,
+      "height": 1620,
+      "file": "sanya-sunset/demo.webm",
+      "sha256": "bcb634d0c51b6c2b512d514a5966058da72d4ca6831fbff83d098d811f1688bb",
+      "browser": "Chrome",
+      "result": "实际导出、浏览器重播到末尾；1fps五个时间点帧哈希均不同。",
+      "limits": [
+        "MP4 not checked.",
+        "No seamless-loop guarantee.",
+        "Actual recording frame rate is below the 15fps target."
+      ]
+    }
   },
   {
     "id": "hulunbuir-storm",
@@ -815,7 +1485,56 @@
       "巨大云体对比低平田野"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "clouds",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0.48
+              ],
+              [
+                0,
+                0.48
+              ]
+            ]
+          ],
+          "protected": []
+        },
+        {
+          "type": "rain",
+          "regions": [
+            [
+              [
+                0.78,
+                0.35
+              ],
+              [
+                1,
+                0.32
+              ],
+              [
+                1,
+                0.58
+              ],
+              [
+                0.78,
+                0.67
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www.photoworld.com.cn/post/144452",
     "source_image": "https://image.photoworld.com.cn/wp-content/uploads/2021/04/%E6%9C%80%E7%88%B1%E5%9D%8F%E5%A4%A9%E6%B0%94-04-640x360.jpeg",
@@ -827,10 +1546,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "81170eee6605151c2f7c4ea2ffeb57a9054f77e836aba173434d089ba0273f33",
     "image_dimensions": [
       1672,
@@ -849,7 +1569,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "hulunbuir-storm",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "beihai-dawn",
@@ -874,7 +1618,32 @@
       "岸线限定的冷色反射"
     ],
     "motion": {
-      "type": "still"
+      "layers": [
+        {
+          "type": "clouds",
+          "regions": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0.48,
+                0
+              ],
+              [
+                0.48,
+                0.26
+              ],
+              [
+                0,
+                0.26
+              ]
+            ]
+          ],
+          "protected": []
+        }
+      ]
     },
     "source_page": "https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/",
     "source_image": "https://images.pexels.com/photos/14752023/pexels-photo-14752023.jpeg?auto=compress&cs=tinysrgb&w=2400",
@@ -888,10 +1657,11 @@
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
       "limits": [
         "参考反射表面水/薄冰状态未确认；本例保持静态，不加入水纹。"
-      ]
+      ],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "static",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "861f35e2b418cb90bf845ad7a322e1b74bb844df1f27047b84decfb282d878fb",
     "image_dimensions": [
       1672,
@@ -910,7 +1680,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "beihai-dawn",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "mongkok-rain",
@@ -935,46 +1729,51 @@
       "篷布/窗格/伞群不同密度"
     ],
     "motion": {
-      "type": "rain",
-      "regions": [
-        [
-          [
-            0.35,
-            0.91
+      "layers": [
+        {
+          "type": "rain",
+          "regions": [
+            [
+              [
+                0.35,
+                0.91
+              ],
+              [
+                0.45,
+                0.76
+              ],
+              [
+                0.6,
+                0.57
+              ],
+              [
+                0.73,
+                0.42
+              ],
+              [
+                0.74,
+                0.48
+              ],
+              [
+                0.63,
+                0.62
+              ],
+              [
+                0.53,
+                0.79
+              ],
+              [
+                0.5,
+                1
+              ],
+              [
+                0.34,
+                1
+              ]
+            ]
           ],
-          [
-            0.45,
-            0.76
-          ],
-          [
-            0.6,
-            0.57
-          ],
-          [
-            0.73,
-            0.42
-          ],
-          [
-            0.74,
-            0.48
-          ],
-          [
-            0.63,
-            0.62
-          ],
-          [
-            0.53,
-            0.79
-          ],
-          [
-            0.5,
-            1
-          ],
-          [
-            0.34,
-            1
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://px3.fr/winners/hm/2024/1-114188-24/",
@@ -989,10 +1788,11 @@
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
       "limits": [
         "旺角市集主题已核实；具体街名、商户及逐窗身份未知，不作精确街道复原。"
-      ]
+      ],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "bfcce29da35f62afaaa2270f63445affa32fb395f7f97c10d4178cb984d74340",
     "image_dimensions": [
       1672,
@@ -1011,7 +1811,31 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "mongkok-rain",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "shenzhen-bay",
@@ -1036,38 +1860,43 @@
       "对应岸灯的断续水面反射"
     ],
     "motion": {
-      "type": "water",
-      "regions": [
-        [
-          [
-            0.79,
-            0.74
+      "layers": [
+        {
+          "type": "water",
+          "regions": [
+            [
+              [
+                0.79,
+                0.74
+              ],
+              [
+                1,
+                0.67
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0.33,
+                1
+              ],
+              [
+                0.5,
+                0.88
+              ],
+              [
+                0.61,
+                0.81
+              ],
+              [
+                0.7,
+                0.78
+              ]
+            ]
           ],
-          [
-            1,
-            0.67
-          ],
-          [
-            1,
-            1
-          ],
-          [
-            0.33,
-            1
-          ],
-          [
-            0.5,
-            0.88
-          ],
-          [
-            0.61,
-            0.81
-          ],
-          [
-            0.7,
-            0.78
-          ]
-        ]
+          "protected": []
+        }
       ]
     },
     "source_page": "https://www.i-mad.com/zh/projects/shenzhen-bay-culture-park",
@@ -1080,10 +1909,11 @@
       "status": "reviewed",
       "date": "2026-10-09",
       "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
+      "limits": [],
+      "scope": "composition-source-only"
     },
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
-    "animation_status": "local-overlay",
+    "medium": "由内部构图素材采样、量化为逐格字符与颜色的 Canvas 动画",
+    "animation_status": "character-rendered",
     "image_sha256": "82622cf481ea2d8d4aee9ae9a0d291763a30ff94c62cf18fde001c7f83e68209",
     "image_dimensions": [
       1672,
@@ -1108,6 +1938,30 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "image_role": "internal-composition-source",
+    "animation_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "actual character visuals, short Chrome playback and renderer-derived thumbnails",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "../references/animation-verification.json",
+      "playback": {
+        "changed": true,
+        "from": "0.000",
+        "hidden": false,
+        "id": "shenzhen-bay",
+        "observedFrames": 23,
+        "to": "1.533"
+      }
+    },
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   }
 ]

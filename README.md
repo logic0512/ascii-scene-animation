@@ -1,53 +1,53 @@
-# 实景点阵风景 · ASCII Scene Animation
+# 实景ASCII风景动画 · ASCII Scene Animation
 
 GitHub：[logic0512/ascii-scene-animation](https://github.com/logic0512/ascii-scene-animation)
 
-根据一个地点或一张图片，制作有辨识度和观赏性的彩色点阵风景；需要时再加入海浪、云雾、雨和灯光等环境动态。
+根据地点或上传图片制作**真正由字符网格和有限颜色逐帧驱动的ASCII风景演示动画**。先确认主题、地标与空间，再设计好看的取景和光影，将ascii.rest的绘制方法迁移到真实中国题材。
 
-流程是：**确认主题与真实要素 → 判断审美并设计取景、光影 → 选择点阵绘制方法 → 实际生成 → 看图核验 → 按需动画**。找图首先是为了求证地标和场景，不要求照搬一张普通资料照的构图。上传图忠实转绘则默认保留原结构。
+成果以实际字符播放器为准。内部PNG仅用于构图、色光和采样，不是ASCII成果，也不作为封面或下载效果承诺。
 
-本项目借鉴 [ascii.rest](https://ascii.rest/) 与 [bas3line/ascii](https://github.com/bas3line/ascii) 的15组绘制方法：山湖分面、极光天幕、水下透射光、沙坡星尘、球面硬光、园林暮色、湖灯纵深、水岸灯链、分层雾、夜海碎波、落日反光、体积云雨、建筑晨光、湿街光晕及暮岸暖光。它们是绘制方法与表现重点，不是直接换地名的模板，也不只是调色板。本项目为独立封装，非原作者官方项目。
+## 查看真实效果
 
-![深圳湾文化广场点阵风景，AI生成、非实拍](examples/shenzhen-bay/image.png)
+内置动画可通过本地HTTP服务在浏览器直接播放，不需要图像模型、API密钥或Node。ASCII字符渲染在本机免费、离线执行。
 
-## 查看案例
+例如在仓库目录执行 `python3 -m http.server 8080`，浏览 [http://localhost:8080/examples/](http://localhost:8080/examples/)。入口为 [examples/index.html](examples/index.html)；直接双击HTML可能无法加载模块或资料。
 
-画廊需要通过本地HTTP服务打开。在本仓库目录执行 `python3 -m http.server 8080`，然后浏览 [http://localhost:8080/examples/](http://localhost:8080/examples/)。直接双击HTML可能无法读取作品目录。
+15个中国相关主题的来源、艺术方向与逐例状态见 [案例清单](examples/manifest.json)和[案例依据](references/china-cases.md)。规格为208×117字符、目标调度15fps、最多64色，通过上游 `mount` 绘制；实际帧率取决于运行环境。15例实际字符画面已逐个查看，并在Chrome检查到时间推进与画面变化，记录见 [动画核验](references/visual-review.md)。
 
-已包含15张实际PNG、各自执行提示词与创作记录，并完成一次独立静帧复核；未发现明显的核心地标身份、主要空间或主体数量错误。细部未确认项见[复核说明](references/visual-review.md)。七幅提供局部水光或雨点展示，其余保持静态。
+缩略图、主预览和导出来自同一字符渲染。画廊请求录制约5秒同Canvas动画，浏览器选择支持的WebM或MP4格式，不提供内部PNG导出。三亚样例的WebM已实际导出并播放检查：4.88秒、62帧、2880×1620；其余14例视频导出与MP4兼容性未逐一验证。
 
-每张图为 **AI生成／非实拍**；实际文件、具体提示词、选景、实景出处、艺术化改变和核验状态见 [examples/manifest.json](examples/manifest.json)。生成、视觉检查、动画是独立状态。
+下方动图由这段实际视频缩小、降至10fps制作，没有用内部PNG合成；完整效果以实时播放器及[原始视频](examples/sanya-sunset/demo.webm)为准。不承诺无缝循环。
 
-[中国案例与依据](references/china-cases.md)逐项说明主题、求证来源、美术方向、艺术改变与借鉴方法。求证图不冻结作品的取景与光照。
+![三亚湾实际字符播放器录制](examples/sanya-sunset/demo.gif)
 
 ## 安装与使用
 
-将本仓库或解压后的完整文件夹复制到你的 Skill 目录，并将目录命名为 `ascii-scene-animation`。Codex 常用位置为 `~/.codex/skills/ascii-scene-animation`；其他支持 `SKILL.md` 的代理使用各自的 Skill 安装位置。不要只复制入口文件，保留 `references/` 等相对目录；更新已有安装前保留自己的改动。
-
-然后在支持 Skill 的代理中调用：
+将完整文件夹复制到你的 Skill 目录，命名为 `ascii-scene-animation`。Codex 常用位置为 `~/.codex/skills/ascii-scene-animation`；其他支持 `SKILL.md` 的代理使用各自安装位置。保留相对目录，更新已有安装时保留自己的修改。
 
 ```text
-使用 $ascii-scene-animation，做大梅沙的点阵海岸风景，要看到海和羽翼人物雕塑。
-先核实雕塑与海岸空间，再用明确的 art_direction 规划取景和光影，设计蓝调夜景；不要照搬灯塔。
+使用 $ascii-scene-animation，做大梅沙的ASCII海岸演示动画，要看到海和羽翼人物雕塑。
+先核实七座雕塑与海岸空间，再规划取景和蓝调光影；最后实际播放字符动画检查，不拿内部PNG当成品。
 ```
 
 ```text
-使用 $ascii-scene-animation，将我上传的风景图忠实转绘成彩色点阵。
-保留建筑、人物数量、岸线和构图，重点改善明暗层次与水面反射。
+使用 $ascii-scene-animation，基于我上传的图片做彩色ASCII动画。
+保留建筑、人物数量、岸线和构图，用稳定字符轮廓表现主体，只在适合的环境区域加入动态。
 ```
 
 ```text
-使用 $ascii-scene-animation，选择一个中国园林做暮色点阵风景。
-用真实资料确认亭廊与水岸，再设计有层次的暮色；最后做轻微水纹动画。
+使用 $ascii-scene-animation，制作武汉黄鹤楼暮色ASCII动画。
+核实主楼与江桥关系，设计屋檐暖光和远城层次；预览和视频都使用同一字符播放器。
 ```
 
-地点创作允许主动设计构图、昼夜、天气和光影，并记录改变。敦煌月牙泉可以依据真实泉岸与建筑资料创作星夜；武汉可选择经核实的黄鹤楼暮色。地月题材注明来自中国探月工程影像，属于中国相关题材，非中国境内风景。辨识地标、群组总量、物种和空间关系仍以实景为准；例如大梅沙不能把不同羽翼人物变成复制的同一雕塑，中国园林不能带入日式五重塔。
+找图用于实景求证，地点创作可重新构图、美化和设计昼夜，记录艺术化改变。上传图默认忠实保留结构。地标形制、雕塑群总量、物种与合理空间仍以实景为准，不能让中国园林带入日式五重塔。敦煌月牙泉可以创作星夜；地月题材注明来自中国探月工程影像，非中国境内风景。
 
-## 工具要求
+## 方法与运行要求
 
-这是给视觉代理使用的 Skill，不是一个只需输入地名即可运行的独立图像网站。实际出图需要代理可用的图像生成/编辑工具，地点核实需要搜索与实际读图能力；支持图像参考输入的工具更适合保留建筑和雕塑结构。提示词可复用，但生成模型不保证建筑尺寸、复杂轮廓或数量完全准确，必须检查实际输出。本包不包含图像模型、API密钥或付费额度。没有图像工具时只能提供制作说明，不能声称已经出图。
+本项目借鉴 [ascii.rest](https://ascii.rest/)及 [bas3line/ascii](https://github.com/bas3line/ascii) 的15组方法，包括山体分面、极光帘幕、水下透射光、沙坡星尘、球面硬光、园林暮色、灯光纵深、水岸灯链、分层雾、夜海碎波、落日反射、体积云雨、建筑晨光、湿街光晕和暮岸暖光。方法用于组织内容与表现，不是直接换地名的模板或单一调色板。本项目为独立封装，非官方Skill。
 
-**Node不是图像流程的必需项。** 仅在研究原作代码或制作兼容的代码动画时，辅助脚本需要 Node 23.6+：
+观看内置案例只需本地HTTP服务和浏览器。制作新地点时，需要代理核实主题、设计并实现字符场景；若要生成新的内部构图素材，才需要图像生成/编辑模型。ASCII采样、字符渲染与环境运动在本机执行，无模型调用费用，不需要在线图像服务。模型不能保证建筑几何和数量，字符化后还可能丢失细节，因此必须检查真正的字符结果。本包不包含图像模型、API密钥或付费额度。
+
+浏览器承担画廊播放和视频录制。以下Node 23.6+脚本只用于开发/检查，不是内置案例播放依赖：
 
 ```sh
 node scripts/scene.mjs check-library
@@ -57,14 +57,12 @@ node scripts/self-check.mjs
 node scripts/gallery-self-check.mjs
 ```
 
-`reference`展示上游原作供技法研究，不生成指定地点。检查脚本能核查指纹、记录与部分代码契约，不能判断地点真实性、画面审美或动画是否自然。原性能检查保留，不将可播放当作性能通过。
+`reference`展示原作供研究，不生成指定地点。自动检查能验证指纹、记录或代码契约，不能证明地标准确、美观、运动自然或导出正确。[核验说明](references/visual-review.md)区分内部素材检查、实际字符播放检查和视频验证。
 
 ## 文档与来源
 
-- [Skill入口](SKILL.md)：代理执行规则与两种输入模式。
-- [制作方法](references/method.md)：求证、审美设计、提示与核验。
-- [15组技法](references/scenes.md)：可迁移方法、重点与内容边界。
-- [来源和版本](references/provenance.md)：上游快照、修订范围与验证限制。
-- [许可](LICENSE)与[第三方说明](THIRD_PARTY_NOTICES.md)。
+- [Skill入口](SKILL.md)与[制作方法](references/method.md)。
+- [15组技法](references/scenes.md)与[中国案例依据](references/china-cases.md)。
+- [来源与版本](references/provenance.md)、[许可](LICENSE)、[第三方说明](THIRD_PARTY_NOTICES.md)。
 
-本项目自己编写的代码和文档按MIT许可提供。上游保留 [bas3line 的MIT许可](assets/ascii/LICENSE)；固定快照及19个原文件指纹见 [upstream.json](references/upstream.json)。示例图片明确标注AI生成、非实拍，不承诺它们与真实摄影等同，也不虚构摄影作者对生成结果的授权。第三方求证照片只链接来源，不随仓库分发；代码的MIT许可不授予这些照片的使用权。
+本项目自己编写的代码和文档按MIT许可提供；上游保留 [bas3line的MIT许可](assets/ascii/LICENSE)，19个原文件指纹见 [upstream.json](references/upstream.json)。展示注明程序生成的ASCII艺术、非实拍，内部AI素材另标AI生成。第三方求证照片只链接来源，不随仓库分发；项目MIT许可不授予这些照片的使用权，不虚构原作者或摄影作者的授权。

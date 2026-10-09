@@ -1,3 +1,7 @@
+import { createScene } from './scene.js';
+import { mount } from './mount.js';
+import { scenePlayer, recordVideo } from './player.js';
+
 const LABELS = {
   'alpine-dawn': '雪山与晨光', 'aurora-fjord': '极光与暗岸', 'deep-reef': '海底与珊瑚',
   'desert-night': '沙丘与星夜', earthrise: '地月与太空', 'kyoto-dusk': '园林与暮色',
@@ -33,33 +37,6 @@ export function adjacentIndex(index, step, length) {
   return ((current + step) % length + length) % length;
 }
 
-function polygons(regions) {
-  if (!Array.isArray(regions)) return [];
-  return regions.map(region => Array.isArray(region) ? region : region?.points).filter(points =>
-    Array.isArray(points) && points.length >= 3 && points.every(point =>
-      Array.isArray(point) && point.length === 2 && point.every(n => Number.isFinite(n) && n >= 0 && n <= 1)));
-}
-
-export function motionSpec(motion) {
-  if (!motion || !['water', 'rain'].includes(motion.type)) return null;
-  let regions = polygons(motion.regions);
-  if (motion.regions === undefined && motion.type === 'water' && Number.isFinite(motion.waterline) && motion.waterline > 0 && motion.waterline < 1) {
-    regions = [[[0, motion.waterline], [1, motion.waterline], [1, 1], [0, 1]]];
-  }
-  return regions.length ? { type: motion.type, regions } : null;
-}
-
-export function playback(state, action) {
-  switch (action.type) {
-    case 'load': return { available: Boolean(action.available), playing: Boolean(action.available && !action.reduced), elapsed: 0 };
-    case 'toggle': return { ...state, playing: state.available && !state.playing };
-    case 'pause': return { ...state, playing: false };
-    case 'reset': return { ...state, playing: false, elapsed: 0 };
-    case 'tick': return state.playing ? { ...state, elapsed: state.elapsed + Math.max(0, Math.min(action.delta || 0, 100)) } : state;
-    default: return state;
-  }
-}
-
 function contentLines(value) {
   if (typeof value === 'string') return value.trim() ? [LABELS[value] || value] : [];
   if (Array.isArray(value)) return value.flatMap(contentLines);
@@ -90,111 +67,57 @@ function safeSource(value) {
   } catch { return null; }
 }
 
-export function drawEnvironment(ctx, spec, w, h, t) {
-  const cell = w / 240;
-  const snap = value => (Math.floor(value / cell) + .5) * cell;
-  ctx.save();
-  ctx.beginPath();
-  for (const points of spec.regions) {
-    points.forEach(([x, y], i) => i ? ctx.lineTo(x * w, y * h) : ctx.moveTo(x * w, y * h));
-    ctx.closePath();
-  }
-  ctx.clip();
-  // Square-grid dots are clipped to the supplied regions; the original image stays fixed.
-  const count = spec.type === 'water' ? 48 : 90;
-  for (let i = 0; i < count; i++) {
-    const x = snap(((i * .61803398875) % 1) * w);
-    const shimmer = .5 + .5 * Math.sin(t * 1.3 + i * 2.1);
-    const y = snap((((i * .38196601125) % 1 + (spec.type === 'rain' ? t * .12 : 0)) % 1) * h);
-    const length = spec.type === 'water' ? 2 + Math.round(3 * shimmer) : 3;
-    for (let j = 0; j < length; j++) {
-      const water = spec.type === 'water';
-      const dx = water ? (j - Math.floor(length / 2)) * cell : 0;
-      const dy = water ? 0 : j * cell;
-      const alpha = water ? (.025 + .065 * shimmer) * (1 - .12 * Math.abs(j - Math.floor(length / 2))) : .12 * (1 - j * .25);
-      ctx.fillStyle = water ? `rgba(191,218,223,${alpha})` : `rgba(197,214,224,${alpha})`;
-      ctx.beginPath();
-      ctx.arc(x + dx, y + dy, cell * .22, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
-  ctx.restore();
+function thumbnailFrame(canvas, piece) {
+  // Render at a legible grid size before scaling into a small card.
+  const host = document.createElement('div');
+  host.style.cssText = 'position:absolute;left:-10000px;top:0;width:832px;';
+  const stage = document.createElement('canvas'); host.append(stage); document.body.append(host);
+  try {
+    const stop = mount(stage, piece, { fps: 0 });
+    canvas.width = stage.width; canvas.height = stage.height;
+    canvas.getContext('2d').drawImage(stage, 0, 0);
+    stop();
+  } finally { host.remove(); }
 }
 
-function environmentPlayer(canvas, changed) {
-  const ctx = canvas.getContext('2d');
-  let state = { available: false, playing: false, elapsed: 0 };
-  let spec = null;
-  let frame = 0;
-  let previous = 0;
-  function clear() { ctx?.clearRect(0, 0, canvas.width, canvas.height); }
-  function draw() {
-    clear();
-    if (!ctx || !spec) return;
-    drawEnvironment(ctx, spec, canvas.width, canvas.height, state.elapsed / 1000);
-  }
-  function loop(now) {
-    frame = 0;
-    if (!state.playing) return;
-    if (!previous) previous = now;
-    if (now - previous >= 1000 / 15) {
-      state = playback(state, { type: 'tick', delta: now - previous });
-      previous = now;
-      draw();
-    }
-    frame = requestAnimationFrame(loop);
-  }
-  function dispatch(action) {
-    cancelAnimationFrame(frame);
-    frame = 0;
-    previous = 0;
-    state = playback(state, action);
-    if (action.type === 'reset' || !state.available) clear();
-    if (state.playing) frame = requestAnimationFrame(loop);
-    changed(state);
-  }
-  return {
-    load(motion, image, reduced) {
-      spec = motionSpec(motion);
-      clear();
-      if (image) {
-        canvas.width = Math.min(image.naturalWidth, 1600);
-        canvas.height = Math.round(canvas.width * image.naturalHeight / image.naturalWidth);
-      }
-      canvas.hidden = !spec || !ctx;
-      dispatch({ type: 'load', available: Boolean(spec && image && ctx), reduced });
-      return Boolean(spec && image && ctx);
-    },
-    dispatch
-  };
+const pieces = new Map();
+async function loadPiece(item) {
+  if (!pieces.has(item.id)) pieces.set(item.id, (async () => {
+    if (!item.image) throw new Error('构图素材路径无效。');
+    const image = new Image();
+    image.src = item.image;
+    await image.decode();
+    const source = document.createElement('canvas');
+    source.width = image.naturalWidth; source.height = image.naturalHeight;
+    const ctx = source.getContext('2d', { willReadFrequently: true });
+    ctx.drawImage(image, 0, 0);
+    return createScene(ctx.getImageData(0, 0, source.width, source.height).data, source.width, source.height, item);
+  })().catch(error => { pieces.delete(item.id); throw error; }));
+  return pieces.get(item.id);
 }
 
 export async function initGallery() {
   const $ = id => document.getElementById(id);
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let cases = [], index = 0, sequence = 0;
-  const player = environmentPlayer($('environment'), state => {
-    $('motion-toggle').disabled = !state.available;
-    $('motion-reset').disabled = !state.available;
-    $('motion-toggle').textContent = state.playing ? '暂停环境动效' : '播放环境动效';
+  const player = scenePlayer($('ascii-canvas'), state => {
+    $('motion-toggle').disabled = recording || !state.available;
+    $('motion-reset').disabled = recording || !state.available;
+    $('motion-toggle').textContent = state.playing ? '暂停动画' : '播放动画';
     $('motion-toggle').setAttribute('aria-pressed', String(state.playing));
   });
-  function downloadReady(item, available) {
-    $('download').setAttribute('aria-disabled', String(!available));
-    if (available) {
-      $('download').href = item.image;
-      $('download').download = `${item.id}.png`;
-      $('download').removeAttribute('tabindex');
-    } else {
-      $('download').removeAttribute('href');
-      $('download').removeAttribute('download');
-      $('download').tabIndex = -1;
-    }
+  let recording = false, videoURL = null;
+  function downloadReady(available) {
+    $('download').disabled = !available || !window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream;
+    $('video-file').hidden = true;
+    if (videoURL) { URL.revokeObjectURL(videoURL); videoURL = null; }
+    $('export-status').textContent = '';
   }
   function showScene(next, updateHistory = false, focus = false) {
+    if (recording) return;
     index = next;
     const item = cases[index], token = ++sequence;
-    player.load(null, null, true);
+    player.load(null, true);
     $('stage').hidden = true;
     $('image-status').hidden = false;
     $('image-status').textContent = '正在载入这幅作品…';
@@ -202,9 +125,9 @@ export async function initGallery() {
     $('work-base').textContent = `${LABELS[item.base] || '点阵风景'} / ${item.base || item.id}`;
     $('position').textContent = `${String(index + 1).padStart(2, '0')} / ${String(cases.length).padStart(2, '0')}`;
     $('work-description').textContent = typeof item.description === 'string' ? item.description : '';
-    $('main-image').alt = item.title + (item.description ? `：${item.description}` : '，点阵风景作品');
-    $('motion-label').textContent = '静态点阵作品';
-    downloadReady(item, false);
+    $('ascii-canvas').setAttribute('aria-label', item.title + (item.description ? `：${item.description}` : '，字符点阵动画'));
+    $('motion-label').textContent = '正在生成字符帧…';
+    downloadReady(false);
     setContent($('preserve'), item.preserve, '此作品尚未附上场景要素说明。');
     setContent($('art-direction'), item.art_direction, '此作品尚未附上美化说明。');
     setContent($('creative-changes'), item.creative_changes, '');
@@ -219,44 +142,41 @@ export async function initGallery() {
     url.searchParams.set('scene', item.id);
     if (updateHistory) url.hash = '';
     history[updateHistory ? 'pushState' : 'replaceState']({}, '', url);
-    function failure() {
+    loadPiece(item).then(piece => {
       if (token !== sequence) return;
-      $('image-status').textContent = '这幅作品的 PNG 未能载入。请检查图片是否已生成并随画廊一同提供；当前没有用占位图替代。';
-    }
-    if (!item.image) { failure(); return; }
-    const image = new Image();
-    image.onload = () => {
-      if (token !== sequence) return;
-      $('main-image').src = image.src;
       $('stage').hidden = false;
       $('image-status').hidden = true;
-      downloadReady(item, true);
-      const animated = player.load(item.motion, image, reduced.matches || document.hidden);
-      $('motion-label').textContent = animated
-        ? `静态点阵作品＋局部环境动效 · ${item.motion.type === 'water' ? '水域微光' : '圆点雨滴'}${reduced.matches ? ' · 已按系统设置暂停' : ''}`
-        : '静态点阵作品 · 此幅保留静态展示';
+      player.load(piece, reduced.matches || document.hidden);
+      downloadReady(true);
+      $('motion-label').textContent = `${piece.meta.cols}×${piece.meta.rows} · ${piece.meta.fps} fps · ${piece.meta.palette.length} 色字符动画`;
       if (focus) {
         $('work-title').focus({ preventScroll: true });
-        $('current-work').scrollIntoView({ behavior: reduced.matches ? 'instant' : 'smooth', block: 'start' });
+        $('current-work').scrollIntoView({ behavior: 'instant', block: 'start' });
       }
-    };
-    image.onerror = failure;
-    image.src = item.image;
+    }).catch(error => {
+      if (token === sequence) $('image-status').textContent = `字符动画未能生成：${error.message}`;
+    });
   }
+
   function buildCards() {
     $('cards').replaceChildren(...cases.map((item, i) => {
       const button = document.createElement('button');
       button.type = 'button'; button.className = 'card'; button.dataset.id = item.id;
       button.setAttribute('aria-label', `查看${item.title}`);
       const preview = document.createElement('span'); preview.className = 'thumbnail';
-      const status = document.createElement('span'); status.className = 'thumbnail-status'; status.textContent = '图片载入中';
+      const status = document.createElement('span'); status.className = 'thumbnail-status'; status.textContent = '字符帧生成中';
       preview.append(status);
-      if (item.image) {
-        const image = new Image(); image.alt = ''; image.loading = 'lazy'; image.decoding = 'async';
-        image.onload = () => { image.hidden = false; status.hidden = true; };
-        image.onerror = () => { image.hidden = true; status.textContent = 'PNG 未能载入'; };
-        image.src = item.image; preview.append(image);
-      } else { status.textContent = 'PNG 路径无效'; }
+      const canvas = document.createElement('canvas');
+      canvas.setAttribute('aria-hidden', 'true'); preview.append(canvas);
+      const observer = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        observer.disconnect();
+        loadPiece(item).then(piece => {
+          status.hidden = true;
+          thumbnailFrame(canvas, piece);
+        }).catch(() => { status.textContent = '字符帧未能生成'; });
+      }, { rootMargin: '100px' });
+      observer.observe(button);
       const caption = document.createElement('span'); caption.className = 'card-caption';
       const title = document.createElement('span'); title.className = 'card-title'; title.textContent = item.title;
       const base = document.createElement('span'); base.className = 'card-base'; base.textContent = item.base || '';
@@ -265,6 +185,26 @@ export async function initGallery() {
       return button;
     }));
   }
+  $('download').addEventListener('click', async () => {
+    if (recording) return;
+    recording = true;
+    const item = cases[index];
+    const controls = [...document.querySelectorAll('button')];
+    const disabled = controls.map(button => button.disabled);
+    controls.forEach(button => button.disabled = true);
+    $('export-status').textContent = '正在录制播放器的实际字符画面，请保持此页可见…';
+    $('stage').scrollIntoView({ block: 'center' });
+    player.dispatch({ type: 'play' });
+    try {
+      const blob = await recordVideo($('ascii-canvas'), 5);
+      videoURL = URL.createObjectURL(blob);
+      const link = $('video-file'); link.href = videoURL;
+      link.download = `${item.id}.${blob.type.includes('mp4') ? 'mp4' : 'webm'}`;
+      link.textContent = '保存刚录制的 5 秒动画 ↗'; link.hidden = false;
+      $('export-status').textContent = '录制完成，视频与上方播放器使用同一字符画面。';
+    } catch (error) { $('export-status').textContent = `录制失败：${error.message}`; }
+    finally { recording = false; controls.forEach((button, i) => button.disabled = disabled[i]); }
+  });
   $('previous').addEventListener('click', () => showScene(adjacentIndex(index, -1, cases.length), true));
   $('next').addEventListener('click', () => showScene(adjacentIndex(index, 1, cases.length), true));
   $('motion-toggle').addEventListener('click', () => player.dispatch({ type: 'toggle' }));

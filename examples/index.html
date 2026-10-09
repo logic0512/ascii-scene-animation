@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="十五幅中国主题点阵风景，查看作品、创作取舍与实景依据。">
+  <meta name="description" content="十五幅中国主题字符点阵动画，查看作品、创作取舍与实景依据。">
   <title>中国风景 · 点阵画廊</title>
   <link rel="stylesheet" href="./gallery.css">
   <script type="module" src="./gallery.js"></script>
@@ -30,22 +30,22 @@
       </div>
       <div class="artwork">
         <div class="stage" id="stage" hidden>
-          <img id="main-image" alt="" decoding="async">
-          <canvas id="environment" aria-hidden="true" hidden></canvas>
+          <canvas id="ascii-canvas" role="img" aria-label="字符点阵动画"></canvas>
         </div>
         <p class="image-status" id="image-status" role="status">正在读取作品目录…</p>
       </div>
       <div class="work-footer">
         <p class="description" id="work-description"></p>
-        <a id="download" class="download" aria-disabled="true">下载 PNG <span aria-hidden="true">↗</span></a>
+        <button id="download" class="download" type="button" disabled>录制 5 秒视频 ↗</button>
       </div>
       <div class="motion-bar">
-        <p id="motion-label">静态点阵作品</p>
+        <p id="motion-label">逐格字符动画</p>
         <div class="motion-actions">
-          <button id="motion-toggle" type="button" disabled aria-pressed="false">播放环境动效</button>
+          <button id="motion-toggle" type="button" disabled aria-pressed="false">播放动画</button>
           <button id="motion-reset" type="button" disabled>重置</button>
         </div>
       </div>
+      <div class="export-bar"><p id="export-status" role="status"></p><a id="video-file" hidden>保存动画</a></div>
       <details id="creation-details" class="creation-details">
         <summary>内容核实与美化取舍 <span aria-hidden="true">＋</span></summary>
         <div class="detail-grid">
@@ -61,7 +61,7 @@
       <div id="cards" class="cards"></div>
     </section>
   </main>
-  <footer class="page-footer"><p>AI生成／非实拍。环境动效仅为局部展示，PNG 下载为静态作品。</p><a href="../SKILL.md">查看 Skill</a></footer>
-  <noscript><p class="noscript">请启用 JavaScript 以读取作品目录、切换作品和下载图片。</p></noscript>
+  <footer class="page-footer"><p>实景求证＋AI构图素材 → 逐格字符转绘。缩略图和视频均来自实际动画渲染。</p><a href="../SKILL.md">查看 Skill</a></footer>
+  <noscript><p class="noscript">请启用 JavaScript 以读取作品目录、切换作品和保存动画。</p></noscript>
 </body>
 </html>

@@ -5,7 +5,7 @@
     "title": "边坝黑湖 · 雪岭初光",
     "description": "冷蓝湖湾映照雪岭，暖光沿坡面缓缓展开。",
     "place": "中国西藏自治区昌都市边坝县边坝镇普玉村，三色湖中的黑湖",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.xinhuanet.com/photo/2022-04/04/c_1128531198.htm",
@@ -41,21 +41,12 @@
       "近景巨大松树、木屋等无依据物件",
       "整幅上下镜像的山湖构图"
     ],
-    "image": "../examples/bianba-lake/image.png",
-    "prompt": "../examples/bianba-lake/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=bianba-lake",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "9ea26c0e7f0d40bb94c717adcc1b641466f169dacf2a451c709375884783376d",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -68,7 +59,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/bianba-lake/image.png",
+      "prompt": "../examples/bianba-lake/prompt.txt",
+      "status": "generated",
+      "sha256": "9ea26c0e7f0d40bb94c717adcc1b641466f169dacf2a451c709375884783376d",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "mohe-aurora",
@@ -76,7 +97,7 @@
     "title": "漠河北极村 · 红色极光",
     "description": "红色光柱升起，低矮雪岸下留出安静的暗部。",
     "place": "中国黑龙江省漠河市北极村",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/c.html",
@@ -112,21 +133,12 @@
       "红木屋、窗灯与烟囱",
       "原固定绿色S形光幕与开放水面镜像"
     ],
-    "image": "../examples/mohe-aurora/image.png",
-    "prompt": "../examples/mohe-aurora/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=mohe-aurora",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "32d4c60100adeb540dd84c02a49f1bb8c84ad89397ac2841dcf8648aec50d1ae",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -139,7 +151,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/mohe-aurora/image.png",
+      "prompt": "../examples/mohe-aurora/prompt.txt",
+      "status": "generated",
+      "sha256": "32d4c60100adeb540dd84c02a49f1bb8c84ad89397ac2841dcf8648aec50d1ae",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "fenjiezhou-reef",
@@ -147,7 +189,7 @@
     "title": "分界洲岛 · 蓝色珊瑚花园",
     "description": "层叠桌状珊瑚向蓝水伸展，鱼影疏密有序。",
     "place": "中国海南省陵水黎族自治县，分界洲岛附近海域",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/c.html",
@@ -183,21 +225,12 @@
       "中心白沙走廊与对称礁丘阵列",
       "预设密集编队鱼群、气泡串和太阳圆盘"
     ],
-    "image": "../examples/fenjiezhou-reef/image.png",
-    "prompt": "../examples/fenjiezhou-reef/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=fenjiezhou-reef",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "51c621378dab6ead0cf7cc98196018ef155a13c755dcca13d01ffc90da0e0ee4",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -210,7 +243,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/fenjiezhou-reef/image.png",
+      "prompt": "../examples/fenjiezhou-reef/prompt.txt",
+      "status": "generated",
+      "sha256": "51c621378dab6ead0cf7cc98196018ef155a13c755dcca13d01ffc90da0e0ee4",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "dunhuang-crescent",
@@ -218,7 +281,7 @@
     "title": "敦煌月牙泉 · 沙山星夜",
     "description": "叠檐楼阁与左前泉水，在蓝紫夜色中互相映照。",
     "place": "中国甘肃省敦煌市，鸣沙山月牙泉",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/c.html",
@@ -255,21 +318,12 @@
       "原固定银河弧线与远镇灯火",
       "自动流星、凭空大月亮"
     ],
-    "image": "../examples/dunhuang-crescent/image.png",
-    "prompt": "../examples/dunhuang-crescent/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=dunhuang-crescent",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "131eacfc08dd266c487fc817dd3456011800bcc66c2ad50ed13123aff44876c1",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -282,7 +336,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/dunhuang-crescent/image.png",
+      "prompt": "../examples/dunhuang-crescent/prompt.txt",
+      "status": "generated",
+      "sha256": "131eacfc08dd266c487fc817dd3456011800bcc66c2ad50ed13123aff44876c1",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "earth-moon",
@@ -290,7 +374,7 @@
     "title": "中国探月工程 · 地月遥望",
     "description": "地球与小月球悬于留黑之中，保留真实影像的尺度关系。",
     "place": "中国探月工程三期再入返回飞行试验器服务舱拍摄的地月合影；太空影像，非中国国内地景",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/content.html",
@@ -326,21 +410,12 @@
       "月球车、旗帜、探测器等未见设备",
       "随机大陆、装饰星群和银河"
     ],
-    "image": "../examples/earth-moon/image.png",
-    "prompt": "../examples/earth-moon/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=earth-moon",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "a4264936081ed53c14b43035d35df877420ea75d84a88efab2ee07dd1749ca8e",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -353,7 +428,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/earth-moon/image.png",
+      "prompt": "../examples/earth-moon/prompt.txt",
+      "status": "generated",
+      "sha256": "a4264936081ed53c14b43035d35df877420ea75d84a88efab2ee07dd1749ca8e",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "wuhan-yellow-crane",
@@ -361,7 +466,7 @@
     "title": "武汉黄鹤楼 · 江城暮色",
     "description": "金色重檐立于蛇山，长江与大桥在暮色后景中展开。",
     "place": "中国湖北省武汉市，蛇山黄鹤楼及后景长江、武汉长江大桥",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm",
@@ -398,21 +503,12 @@
       "日式石灯、鸟居与樱花模板",
       "凭空塔前池塘或富士山"
     ],
-    "image": "../examples/wuhan-yellow-crane/image.png",
-    "prompt": "../examples/wuhan-yellow-crane/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=wuhan-yellow-crane",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "e3a2bb89b547670a632539dfd14286cfe7e042bb8b4f76f13735946d39d5ef03",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -425,7 +521,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/wuhan-yellow-crane/image.png",
+      "prompt": "../examples/wuhan-yellow-crane/prompt.txt",
+      "status": "generated",
+      "sha256": "e3a2bb89b547670a632539dfd14286cfe7e042bb8b4f76f13735946d39d5ef03",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "qinhuai-lanterns",
@@ -433,7 +559,7 @@
     "title": "南京白鹭洲 · 秦淮灯影",
     "description": "园林湖湾、桥与沿岸灯组，在深蓝水面中形成暖光节奏。",
     "place": "中国江苏省南京市白鹭洲公园，第39届秦淮灯会",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/c.html?page=4",
@@ -471,21 +597,12 @@
       "原野湖高山与云杉林",
       "统一水平水线及满湖漂灯"
     ],
-    "image": "../examples/qinhuai-lanterns/image.png",
-    "prompt": "../examples/qinhuai-lanterns/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=qinhuai-lanterns",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "74ee2f609a05d7b7470d5c3e47adec4657605048e1136243d3c3b04f5d410656",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -498,7 +615,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/qinhuai-lanterns/image.png",
+      "prompt": "../examples/qinhuai-lanterns/prompt.txt",
+      "status": "generated",
+      "sha256": "74ee2f609a05d7b7470d5c3e47adec4657605048e1136243d3c3b04f5d410656",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "shanghai-bund",
@@ -506,7 +653,7 @@
     "title": "上海外滩 · 浦江夜色",
     "description": "东方明珠与陆家嘴楼群的光，落入断续的江面倒影。",
     "place": "中国上海黄浦江，外滩一侧望向浦东陆家嘴",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg",
@@ -544,21 +691,12 @@
       "重复路灯链、预设月亮与船阵",
       "按物理高度排行而忽略透视的示意天际线"
     ],
-    "image": "../examples/shanghai-bund/image.png",
-    "prompt": "../examples/shanghai-bund/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=shanghai-bund",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "7d79aa3ef0ca5c8d389975315f66fbf8e3556291f9f2ca38a79d1c101ea6374e",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -571,7 +709,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/shanghai-bund/image.png",
+      "prompt": "../examples/shanghai-bund/prompt.txt",
+      "status": "generated",
+      "sha256": "7d79aa3ef0ca5c8d389975315f66fbf8e3556291f9f2ca38a79d1c101ea6374e",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "zhangjiajie-mist",
@@ -579,7 +747,7 @@
     "title": "张家界天子山 · 雾谷",
     "description": "不等高的石柱在雾中显隐，近壁与阔叶形成空间层次。",
     "place": "中国湖南张家界武陵源天子山区域",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
@@ -617,23 +785,12 @@
       "未经依据的太阳圆盘和强烈光束",
       "等高等距排列的石柱"
     ],
-    "image": "../examples/zhangjiajie-mist/image.png",
-    "prompt": "../examples/zhangjiajie-mist/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": [
-        "横幅扩展远柱为实景地貌启发的艺术重构；不宣称某一真实机位的逐峰复原。"
-      ]
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=zhangjiajie-mist",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "4c9cedb8fe1eeb62a4d4dd399330c9eeccc8b6e71f3410e2a7d8c59b3e35d8e7",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -646,7 +803,39 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/zhangjiajie-mist/image.png",
+      "prompt": "../examples/zhangjiajie-mist/prompt.txt",
+      "status": "generated",
+      "sha256": "4c9cedb8fe1eeb62a4d4dd399330c9eeccc8b6e71f3410e2a7d8c59b3e35d8e7",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [
+          "横幅扩展远柱为实景地貌启发的艺术重构；不宣称某一真实机位的逐峰复原。"
+        ],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "dameisha-night",
@@ -654,7 +843,7 @@
     "title": "深圳大梅沙 · 羽翼海岸",
     "description": "七座彩色羽翼人停在沙滩后排，银蓝浪带向远处延伸。",
     "place": "中国广东深圳市盐田区，大梅沙海滨公园东部羽翼人雕塑区",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964",
@@ -693,23 +882,12 @@
       "预设远岛、浮标闪灯和大月亮",
       "复制姿态的人物雕塑或立在水中的雕塑"
     ],
-    "image": "../examples/dameisha-night/image.png",
-    "prompt": "../examples/dameisha-night/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": [
-        "七座可辨，姿态有别；未逐座确认全部翼片曲线与四肢角度。"
-      ]
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=dameisha-night",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "4dc6bcde68cb647d326c391b290559ab34ab2ddda9119ae1f2ed5588d4a490df",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -728,7 +906,39 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/dameisha-night/image.png",
+      "prompt": "../examples/dameisha-night/prompt.txt",
+      "status": "generated",
+      "sha256": "4dc6bcde68cb647d326c391b290559ab34ab2ddda9119ae1f2ed5588d4a490df",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [
+          "七座可辨，姿态有别；未逐座确认全部翼片曲线与四肢角度。"
+        ],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "sanya-sunset",
@@ -736,7 +946,7 @@
     "title": "三亚湾 · 云隙余晖",
     "description": "厚云间的一线橙光，将海面与近岸浪花连成层次。",
     "place": "中国海南省三亚市，三亚湾；摄影定位18.258097,109.492300附近海滩",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://commons.wikimedia.org/wiki/File:三亞灣日落4.jpg",
@@ -774,21 +984,12 @@
       "帆船与巨大完整太阳圆盘",
       "无依据的椰树框景、刻字巨石和灯塔"
     ],
-    "image": "../examples/sanya-sunset/image.png",
-    "prompt": "../examples/sanya-sunset/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=sanya-sunset",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "59fcca8d7102fe1aab5ee0cf73daa0d4fdad6e9a3b95bfbf42c0a5a6c12c9098",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -801,7 +1002,50 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/sanya-sunset/image.png",
+      "prompt": "../examples/sanya-sunset/prompt.txt",
+      "status": "generated",
+      "sha256": "59fcca8d7102fe1aab5ee0cf73daa0d4fdad6e9a3b95bfbf42c0a5a6c12c9098",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "verified",
+      "date": "2026-10-09",
+      "format": "WebM/VP9",
+      "duration_seconds": 4.878118,
+      "frames": 62,
+      "width": 2880,
+      "height": 1620,
+      "file": "../examples/sanya-sunset/demo.webm",
+      "sha256": "bcb634d0c51b6c2b512d514a5966058da72d4ca6831fbff83d098d811f1688bb",
+      "browser": "Chrome",
+      "result": "实际导出、浏览器重播到末尾；1fps五个时间点帧哈希均不同。",
+      "limits": [
+        "MP4 not checked.",
+        "No seamless-loop guarantee.",
+        "Actual recording frame rate is below the 15fps target."
+      ]
+    }
   },
   {
     "id": "hulunbuir-storm",
@@ -809,7 +1053,7 @@
     "title": "呼伦贝尔 · 风暴前缘",
     "description": "厚云压过低平田野，雨幡透出远处暖光。",
     "place": "中国内蒙古自治区呼伦贝尔草原；具体旗县及道路名称未给出",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.photoworld.com.cn/post/144452",
@@ -849,21 +1093,12 @@
       "金色麦穗、近景马群和金合欢树",
       "自动闪电、固定云塔坐标和龙卷风"
     ],
-    "image": "../examples/hulunbuir-storm/image.png",
-    "prompt": "../examples/hulunbuir-storm/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=hulunbuir-storm",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "81170eee6605151c2f7c4ea2ffeb57a9054f77e836aba173434d089ba0273f33",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -876,7 +1111,37 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/hulunbuir-storm/image.png",
+      "prompt": "../examples/hulunbuir-storm/prompt.txt",
+      "status": "generated",
+      "sha256": "81170eee6605151c2f7c4ea2ffeb57a9054f77e836aba173434d089ba0273f33",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "beihai-dawn",
@@ -884,7 +1149,7 @@
     "title": "北京北海 · 白塔晨光",
     "description": "暖光掠过白塔，岛丘树影与临水长廊分出三层。",
     "place": "中国北京北海公园琼华岛白塔",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/",
@@ -923,23 +1188,12 @@
       "无依据的太阳盘与浓粉雾",
       "将白塔替换成通用楼阁式宝塔"
     ],
-    "image": "../examples/beihai-dawn/image.png",
-    "prompt": "../examples/beihai-dawn/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": [
-        "参考反射表面水/薄冰状态未确认；本例保持静态，不加入水纹。"
-      ]
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=beihai-dawn",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "861f35e2b418cb90bf845ad7a322e1b74bb844df1f27047b84decfb282d878fb",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -952,7 +1206,39 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/beihai-dawn/image.png",
+      "prompt": "../examples/beihai-dawn/prompt.txt",
+      "status": "generated",
+      "sha256": "861f35e2b418cb90bf845ad7a322e1b74bb844df1f27047b84decfb282d878fb",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [
+          "参考反射表面水/薄冰状态未确认；本例保持静态，不加入水纹。"
+        ],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "mongkok-rain",
@@ -960,7 +1246,7 @@
     "title": "香港旺角 · 雨中市集",
     "description": "层叠篷布、密集立面与伞群，在湿路上留下冷暖反光。",
     "place": "中国香港九龙旺角市集，摄影作品Mong Kok Market On A Rainy Night；具体街名未由原页面确认",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://px3.fr/winners/hm/2024/1-114188-24/",
@@ -999,23 +1285,12 @@
       "原东京空巷与独自行人轨迹",
       "默认粉紫霓虹阵列或虚构具体街名"
     ],
-    "image": "../examples/mongkok-rain/image.png",
-    "prompt": "../examples/mongkok-rain/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": [
-        "旺角市集主题已核实；具体街名、商户及逐窗身份未知，不作精确街道复原。"
-      ]
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=mongkok-rain",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "bfcce29da35f62afaaa2270f63445affa32fb395f7f97c10d4178cb984d74340",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -1028,7 +1303,39 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/mongkok-rain/image.png",
+      "prompt": "../examples/mongkok-rain/prompt.txt",
+      "status": "generated",
+      "sha256": "bfcce29da35f62afaaa2270f63445affa32fb395f7f97c10d4178cb984d74340",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [
+          "旺角市集主题已核实；具体街名、商户及逐窗身份未知，不作精确街道复原。"
+        ],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   },
   {
     "id": "shenzhen-bay",
@@ -1036,7 +1343,7 @@
     "title": "深圳湾文化广场 · 暮色原石",
     "description": "原石建筑、春笋与春茧相互呼应，折岸暖光映入水面。",
     "place": "中国广东深圳市南山区后海，深圳湾文化广场及人才公园水岸；同框含中国华润大厦（春笋）与深圳湾体育中心（春茧）",
-    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "medium": "程序生成的彩色ASCII字符动画、非实拍；AI生成PNG仅为内部构图与采样素材",
     "evidence_role": "用于确认地点主题、地标身份、核心要素与空间关系；不要求复制摄影取景、曝光或画幅。",
     "source": {
       "page": "https://www.gooood.cn/shenzhen-bay-cultural-square-by-mad.htm",
@@ -1075,21 +1382,12 @@
       "祭灯火焰、漂流diyas和划桨小舟",
       "水上无实物来源的暖灯点及预设神庙遮阳伞"
     ],
-    "image": "../examples/shenzhen-bay/image.png",
-    "prompt": "../examples/shenzhen-bay/prompt.txt",
-    "image_status": "generated",
-    "visual_review": {
-      "status": "reviewed",
-      "date": "2026-10-09",
-      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
-      "limits": []
-    },
     "gallery_motion": {
       "gallery": "../examples/index.html?scene=shenzhen-bay",
       "configuration": "../examples/manifest.json",
-      "scope": "静态点阵作品＋按准确区域限定的局部水面／雨点展示；其他类型可保留静态，不构成15套完整场景动画。"
+      "scope": "208×117字符、目标调度15fps、最多64色，经上游mount播放；实际帧率取决于环境。",
+      "verification_status": "short_playback_verified"
     },
-    "image_sha256": "82622cf481ea2d8d4aee9ae9a0d291763a30ff94c62cf18fde001c7f83e68209",
     "reference_inputs": [
       {
         "role": "主题/地标/空间求证",
@@ -1108,6 +1406,36 @@
         "source_page": "https://ascii.rest/",
         "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
       }
-    ]
+    ],
+    "internal_basis": {
+      "role": "内部构图、色光与采样素材；不是ASCII成果，不作为主缩略图、预览或视频替代",
+      "file": "../examples/shenzhen-bay/image.png",
+      "prompt": "../examples/shenzhen-bay/prompt.txt",
+      "status": "generated",
+      "sha256": "82622cf481ea2d8d4aee9ae9a0d291763a30ff94c62cf18fde001c7f83e68209",
+      "review": {
+        "status": "reviewed",
+        "date": "2026-10-09",
+        "result": "仅内部构图/采样PNG的有限目视检查未发现明显核心错项；不证明字符化后的识别度、美感、运动或最终ASCII动画通过。",
+        "limits": [],
+        "scope": "internal_png_content_basis_only"
+      }
+    },
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "scope": "final_ascii_animation",
+      "limits": [
+        "Short playback only; not a long-duration or cross-browser performance test.",
+        "Environment motion only; not a full simulation of every upstream scene."
+      ],
+      "record": "animation-verification.json"
+    },
+    "animation_status": "character_animation_reviewed",
+    "export_review": {
+      "status": "not_individually_checked",
+      "target": "约5秒的实际字符Canvas录制；不导出内部PNG",
+      "note": "共享录制入口已以三亚WebM验证，本例未逐一导出；MP4未检查。"
+    }
   }
 ]

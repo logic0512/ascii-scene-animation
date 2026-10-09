@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-09",
+  "renderer_sha256": "42d3e2d28586c7051218413c4f99aa0a9d9ff68e7ea8005ebb959c763c75a656",
+  "scope": "Actual Chrome Canvas playback and renderer-derived thumbnails; visual check described separately in visual-review.md.",
+  "playback_window_seconds": 1.6,
+  "playback": [
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "bianba-lake",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "mohe-aurora",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "fenjiezhou-reef",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "dunhuang-crescent",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "earth-moon",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "wuhan-yellow-crane",
+      "observedFrames": 23,
+      "to": "1.467"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "qinhuai-lanterns",
+      "observedFrames": 23,
+      "to": "1.467"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "shanghai-bund",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "zhangjiajie-mist",
+      "observedFrames": 24,
+      "to": "1.600"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "dameisha-night",
+      "observedFrames": 23,
+      "to": "1.467"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "sanya-sunset",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "hulunbuir-storm",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "beihai-dawn",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "mongkok-rain",
+      "observedFrames": 23,
+      "to": "1.533"
+    },
+    {
+      "changed": true,
+      "from": "0.000",
+      "hidden": false,
+      "id": "shenzhen-bay",
+      "observedFrames": 23,
+      "to": "1.533"
+    }
+  ],
+  "thumbnails": [
+    {
+      "height": 936,
+      "id": "bianba-lake",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "mohe-aurora",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "fenjiezhou-reef",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "dunhuang-crescent",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "earth-moon",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "wuhan-yellow-crane",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "qinhuai-lanterns",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "shanghai-bund",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "zhangjiajie-mist",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "dameisha-night",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "sanya-sunset",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "hulunbuir-storm",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "beihai-dawn",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "mongkok-rain",
+      "ready": true,
+      "width": 1664
+    },
+    {
+      "height": 936,
+      "id": "shenzhen-bay",
+      "ready": true,
+      "width": 1664
+    }
+  ],
+  "export": {
+    "status": "verified",
+    "date": "2026-10-09",
+    "format": "WebM/VP9",
+    "duration_seconds": 4.878118,
+    "frames": 62,
+    "width": 2880,
+    "height": 1620,
+    "file": "sanya-sunset/demo.webm",
+    "sha256": "bcb634d0c51b6c2b512d514a5966058da72d4ca6831fbff83d098d811f1688bb",
+    "browser": "Chrome",
+    "result": "实际导出、浏览器重播到末尾；1fps五个时间点帧哈希均不同。",
+    "limits": [
+      "MP4 not checked.",
+      "No seamless-loop guarantee.",
+      "Actual recording frame rate is below the 15fps target."
+    ]
+  },
+  "frame_compute_only": {
+    "note": "Frame statistics only; not a visual review. Excludes PNG decoding and browser mount. Encoded luminance is a coverage-weighted palette metric, not measured browser brightness.",
+    "minimum_case_average_ms": 5.59,
+    "maximum_case_average_ms": 27.38
+  },
+  "unchecked": [
+    "Other 14 individually exported videos",
+    "MP4 encoder branch",
+    "Other browsers and mobile",
+    "Long-duration performance and seamless looping"
+  ]
+}

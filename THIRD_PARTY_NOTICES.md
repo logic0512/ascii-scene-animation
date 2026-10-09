@@ -17,11 +17,11 @@ Copyright (c) 2026 ascii-scene-animation contributors
 - 许可：MIT，原文保留于 [assets/ascii/LICENSE](assets/ascii/LICENSE)
 - 原署名：Copyright (c) 2026 bas3line (https://github.com/bas3line)
 
-`assets/ascii/`共19个原文件保持不变，清单和指纹见 [references/upstream.json](references/upstream.json)。引用、复制或修改上游代码时保留该许可和署名。本包为独立封装，非官方Skill。
+`assets/ascii/`共19个原文件保持不变，清单和指纹见 [references/upstream.json](references/upstream.json)。`examples/mount.js`由上述原版 `mount.ts`仅移除TypeScript类型生成，保留原作者署名并继续适用该MIT许可。引用、复制或修改上游代码时保留该许可和署名。本包为独立封装，非官方Skill。
 
-## Generated examples
+## Character animation examples and internal generated sources
 
-[examples/index.html](examples/index.html)中的生成成图应注明 **AI生成／非实拍**。具体来源、实际提示词、取景、艺术化改变及检查状态见 [examples/manifest.json](examples/manifest.json)。生成示例不是摄影实录，不可作为地点存在性、天气事件或地标几何的独立证据。
+[examples/index.html](examples/index.html)展示由内部AI构图素材采样得到的实际字符动画，应注明 **AI构图／非实拍**。内部PNG不作为成品展示。具体来源、实际提示词、取景、艺术化改变及检查状态见 [examples/manifest.json](examples/manifest.json)。生成示例不是摄影实录，不可作为地点存在性、天气事件或地标几何的独立证据。
 
 代码与文档的MIT许可不构成对图像模型服务条款、第三方参考照片或所有生成图像权利的保证。本项目不虚构摄影作者的授权，不对AI输出作独占版权承诺。复用示例时保留AI生成、非实拍标识，并查看对应来源与用途说明。
 
