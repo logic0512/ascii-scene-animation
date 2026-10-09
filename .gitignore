@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+!.env.example
+work/
+private-inputs/
+reference-downloads/

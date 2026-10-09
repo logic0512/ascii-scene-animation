@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>点阵场景</title>
+<style>
+:root { color-scheme: light; font-family: ui-monospace,"SFMono-Regular","PingFang SC",monospace; color:#242733; background:#f4f5f7; }
+* { box-sizing:border-box; }
+body { margin:0; padding:28px clamp(20px,5vw,72px); }
+main { max-width:1200px; margin:auto; }
+canvas { display:block; width:100%; aspect-ratio:2; background:#080b12; }
+h1 { font-size:clamp(22px,3vw,30px); font-weight:500; margin:26px 0 10px; line-height:1.35; }
+p { color:#747985; line-height:1.8; font-size:15px; margin:0; }
+.controls { display:flex; gap:12px; margin:18px 0 24px; }
+button { color:#4d5360; background:transparent; border:1px solid #ccd0d7; padding:9px 16px; border-radius:3px; font:inherit; font-size:13px; cursor:pointer; }
+button:focus-visible { outline:2px solid #5874b2; outline-offset:4px; }
+footer { color:#9297a0; font-size:11px; line-height:1.7; border-top:1px solid #dfe2e7; padding-top:16px; }
+a { color:inherit; }
+</style>
+<main>
+  <canvas role="img" aria-label="彩色点阵场景动画">彩色点阵场景。</canvas>
+  <h1>点阵场景</h1>
+  <p id="note"></p>
+  <div class="controls"><button id="play" type="button">暂停</button><button id="reset" type="button">从头播放</button></div>
+  <footer>基于 <a href="https://github.com/bas3line/ascii">ascii.rest / @bas3line</a> · MIT licensed · 地点改编请注明艺术化简化。</footer>
+</main>
+<script type="module" src="./app.js"></script>
+</html>

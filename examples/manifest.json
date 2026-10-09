@@ -1,0 +1,1113 @@
+[
+  {
+    "id": "bianba-lake",
+    "base": "alpine-dawn",
+    "title": "边坝黑湖 · 雪岭初光",
+    "description": "冷蓝湖湾映照雪岭，暖光沿坡面缓缓展开。",
+    "art_direction": "向三色湖黑湖的实景提取连续雪岭、曲折湖湾与右侧岩坡；用更清楚的近中远层次和克制晨光，形成安静的山湖主景。",
+    "creative_changes": [
+      "日间参考改为艺术设定晨光",
+      "压低杂乱近岸细节，强化雪岭与湖湾的主次"
+    ],
+    "preserve": [
+      "连续不对称雪岭，非尖锥山峰阵列",
+      "被岸岬切分的暗蓝湖面",
+      "右侧宽阔岩坡和局部倒影"
+    ],
+    "techniques": [
+      "山体迎背光冷暖分面",
+      "按湖域限定局部倒影",
+      "远景空气透视与沙岩有序点阵"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0.43,
+            0.63
+          ],
+          [
+            0.5,
+            0.63
+          ],
+          [
+            0.55,
+            0.65
+          ],
+          [
+            0.58,
+            0.69
+          ],
+          [
+            0.52,
+            0.74
+          ],
+          [
+            0.46,
+            0.74
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://www.xinhuanet.com/photo/2022-04/04/c_1128531198.htm",
+    "source_image": "https://www.xinhuanet.com/photo/2022-04/04/1128531198_16490430139881n.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nTibet Bianba Black Lake of the Three Colour Lakes. Continuous asymmetric snow-covered ridges behind a winding dark turquoise alpine lake, large broad brown rocky slope to the RIGHT and bank peninsulas cutting into the water. Compose a serene layered mountain-lake panorama, foreground muted rock ledge, blue water linking into the distance, sunrise just outside frame gilding selected snow facets. Snow illuminated champagne pink on one face, cold cobalt in shadow, deep ink foreground. Preserve true ridge character and connected lake/bank relationships; no identical triangle peaks, no Matterhorn, no pine forest or cabins. Adapt photographic day evidence into declared artistic dawn. Dots in the snow facets are smooth ordered value fields; dark lake has partial broken reflections, not an entire upside-down mountain duplicate.",
+    "image": "bianba-lake/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "9ea26c0e7f0d40bb94c717adcc1b641466f169dacf2a451c709375884783376d",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.xinhuanet.com/photo/2022-04/04/c_1128531198.htm",
+        "image_url": "https://www.xinhuanet.com/photo/2022-04/04/1128531198_16490430139881n.jpg",
+        "sha256": "4d0fe49ab3b7860e740a07847ab22bf52a532156680a354a722e917662a77fbc"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "mohe-aurora",
+    "base": "aurora-fjord",
+    "title": "漠河北极村 · 红色极光",
+    "description": "红色光柱升起，低矮雪岸下留出安静的暗部。",
+    "art_direction": "以真实红色极光与低雪岸为主题，抬高天空占比，整理前景雪面明暗；保留漠河平缓地形而非挪威峡湾。",
+    "creative_changes": [
+      "整理光幕的明暗节奏与画面留黑",
+      "雪地细节简化，保持冷色层次"
+    ],
+    "preserve": [
+      "低而连续的雪岸与林线",
+      "红/品红宽光幕和纵向光柱",
+      "雪地前景，无房屋和水面镜像"
+    ],
+    "techniques": [
+      "柔光帘幕的层叠密度",
+      "纵向色带与边缘辉光",
+      "冷暗雪地与发光天空分离"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/c.html",
+    "source_image": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/20260121555b3a52a8c447a3a134b5b41ef986a1_81d16afda76c4122994266a9bc6f0db0.JPG",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nMohe Beiji Village in northern China, based on the photographed winter red aurora event. Very low horizontal snow-covered forest bank across the lower third, open snow foreground with delicate windswept contours. Vast night sky with a luminous magenta-crimson aurora curtain rising in tall soft vertical pillars concentrated left-of-centre, low pale green band at the horizon, indigo-black edges. Elegant spacious composition; radiant red is the main subject, not generic green ribbons. Snow receives a faint violet environmental glow; darker open foreground adds breathing space. NO houses, fjord, tall mountains, steep cliffs, village windows, liquid water or mirror reflection. Do not imply aurora is everyday scenery. Tiny star dots only, no enormous moon.",
+    "image": "mohe-aurora/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "32d4c60100adeb540dd84c02a49f1bb8c84ad89397ac2841dcf8648aec50d1ae",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/c.html",
+        "image_url": "https://www3.xinhuanet.com/20260121/555b3a52a8c447a3a134b5b41ef986a1/20260121555b3a52a8c447a3a134b5b41ef986a1_81d16afda76c4122994266a9bc6f0db0.JPG",
+        "sha256": "bf57d63d41d107964a27c3aba2feaa3894517d60de8ae7619e5759796f18157c"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "fenjiezhou-reef",
+    "base": "deep-reef",
+    "title": "分界洲岛 · 蓝色珊瑚花园",
+    "description": "层叠桌状珊瑚向蓝水伸展，鱼影疏密有序。",
+    "art_direction": "选取分界洲岛桌状珊瑚的层叠薄缘作为主体，让开放蓝水提供负空间，以暗缝和近远色衰减形成海底体积。",
+    "creative_changes": [
+      "减少杂乱鱼影，强调主珊瑚的层叠结构",
+      "采用更清楚的蓝水渐变与上方环境光"
+    ],
+    "preserve": [
+      "大面积层叠桌状/板状珊瑚",
+      "板缘浅亮、层间暗缝",
+      "开放蓝色水体与零散小鱼"
+    ],
+    "techniques": [
+      "水下距离色衰减",
+      "珊瑚薄缘与遮挡分层",
+      "大小鱼影与不同材质点密度"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/c.html",
+    "source_image": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/20260607cdd95bc4c9684b47afcaa9590e2ad51d_20260607b1edfc89406044caa9956ee3a350d518.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nHainan Lingshui, reef near Fenjiezhou Island. Expansive tiered TABLE / PLATE corals extending from lower-left and right into clear cyan-blue open water. The corals have broad thin irregular plates, pale ivory rims and dark undercuts; not giant purple sea fans, kelp walls or a central artificial canyon. Compose an elegant diagonal progression from a substantial near coral plate across smaller receding terraces into generous open blue water in upper third. A few naturally dispersed small fish silhouettes for scale, no enormous tightly choreographed school. Soft upper environmental illumination only, subtle turquoise absorption and deep navy recesses. The plate rims need continuous recognisable outlines reconstructed from small circular dots; dark seams create volume. No exaggerated rays or empty white sand corridor.",
+    "image": "fenjiezhou-reef/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "51c621378dab6ead0cf7cc98196018ef155a13c755dcca13d01ffc90da0e0ee4",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/c.html",
+        "image_url": "https://www.xinhuanet.com/photo/20260607/cdd95bc4c9684b47afcaa9590e2ad51d/20260607cdd95bc4c9684b47afcaa9590e2ad51d_20260607b1edfc89406044caa9956ee3a350d518.jpg",
+        "sha256": "2dc88a31f969b41068fdc9d13ef8ebfe0cc3237e4071ed00f67a5ce79cd67bc7"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "dunhuang-crescent",
+    "base": "desert-night",
+    "title": "敦煌月牙泉 · 沙山星夜",
+    "description": "叠檐楼阁与左前泉水，在蓝紫夜色中互相映照。",
+    "art_direction": "保留泉水、楼阁、植被与沙山的实际关系，用更凝练的沙脊层次和蓝紫星夜突出绿洲；不是椭圆湖加孤塔。",
+    "creative_changes": [
+      "白昼证据改为艺术设定蓝调星夜",
+      "简化游客与栏杆，强化沙脊、泉水和叠檐轮廓"
+    ],
+    "preserve": [
+      "主要泉水在楼阁左前方",
+      "楼阁位于右侧，连接横向低廊屋",
+      "芦苇与树丛遮挡部分水岸",
+      "高沙山围合，非平地孤塔"
+    ],
+    "techniques": [
+      "有序点阵表现沙坡明暗与亮脊",
+      "星点与沙面采用不同密度组织",
+      "水域反光与真实楼阁对应"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/c.html",
+    "source_image": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/20240917e25b785fd45b4ac293c3e124d0b1c2c1_33c7744811ae4da691b772d92d368ccb.JPG",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nDunhuang Mingsha Mountain and Crescent Spring, China. The verified architectural cluster sits RIGHT of the main spring, around x=.73: a Chinese multi-tier eaved pavilion with broad upturned dark roofs, connected to long low horizontal halls and surrounded by reeds/trees. Water extends to the LEFT and FRONT of the pavilion, in a shallow curving partially reed-occluded bay; not a centred oval lake with a lonely temple in its middle. Great sweeping dunes surround the oasis, taller sweeping dune rising right behind the complex, lower diagonal ridge left. Art-direct a lyrical BLUE-HOUR / early-night desert panorama: ink cobalt sky with sparse small stars, soft lavender twilight at horizon, muted copper dune ridges, warm cream glow from a few pavilion windows, cool jade water with narrow broken corresponding reflections. No full Milky Way arc, no moon, no acacia or African settlement. Keep the asymmetric connected pavilion/low-hall forms and real water/shore relationships. Sand shading uses ordered dot density, sky sparse fine stars, stone/roof outlines remain legible. Remove distracting dense crowds as a declared artistic simplification, never change the core landmark forms.",
+    "image": "dunhuang-crescent/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "131eacfc08dd266c487fc817dd3456011800bcc66c2ad50ed13123aff44876c1",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/c.html",
+        "image_url": "https://www.news.cn/20240917/e25b785fd45b4ac293c3e124d0b1c2c1/20240917e25b785fd45b4ac293c3e124d0b1c2c1_33c7744811ae4da691b772d92d368ccb.JPG",
+        "sha256": "2688866e5fb9a3dc7c7d5e2c29725a749ef9fd0e8b11211b749a814afeae8563"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "earth-moon",
+    "base": "earthrise",
+    "title": "中国探月工程 · 地月遥望",
+    "description": "地球与小月球悬于留黑之中，保留真实影像的尺度关系。",
+    "art_direction": "中国探月工程服务舱影像提供地月相对尺度与云带依据，以克制留黑和球面受光形成太空风景。",
+    "creative_changes": [
+      "重排宽画幅留黑以适应展示",
+      "不补画原影像没有的大陆、月面或探测器"
+    ],
+    "preserve": [
+      "右下较大地球、左上小月球",
+      "两天体之间留黑",
+      "原影像可辨云带和月球明暗"
+    ],
+    "techniques": [
+      "球面明暗与细圆点覆盖率",
+      "边缘受光和高光控制",
+      "空间留黑与尺度对比"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/content.html",
+    "source_image": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/part/6775112.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nAn original wide space artwork based on the 2014 Chinese lunar-return test service module Earth-Moon photograph. This is China-related aerospace imagery, not a terrestrial location. Large blue-white EARTH disc sits lower-right of centre; small grey-brown MOON floats separately upper-left, substantially smaller, separated by generous near-black empty space. Preserve visible Earth cloud swirls and continents as indicated in the source, do not invent decorative random map-shaped continents. The lower bright white cloud spiral is particularly recognisable. Compose a refined 16:9 negative-space study with the two discs on a diagonal, no lunar foreground or horizon, no rover, flag, satellite, stars, Milky Way or sunrise sun. Illuminate existing disc shading with delicate cold blue edges and creamy cloud dots. Absolute clean near-black background; light and volume from well-ordered tiny circular dot values. It should feel vast, restrained and elegant, not a space poster with added effects.",
+    "image": "earth-moon/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "a4264936081ed53c14b43035d35df877420ea75d84a88efab2ee07dd1749ca8e",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/content.html",
+        "image_url": "https://www.cnsa.gov.cn/n6758824/n6759009/n6759040/n6759055/n6759187/c6794331/part/6775112.jpg",
+        "sha256": "52aac9e0b12d5ce5b95af525f5ca017de6f1301b012037f1b95daf1eca38f6e9"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "wuhan-yellow-crane",
+    "base": "kyoto-dusk",
+    "title": "武汉黄鹤楼 · 江城暮色",
+    "description": "金色重檐立于蛇山，长江与大桥在暮色后景中展开。",
+    "art_direction": "改选可核实的黄鹤楼与长江大桥视角。主楼金色五层飞檐为视觉中心，城市退为低对比背景，以暮色层次表现江城而非樱园模板。",
+    "creative_changes": [
+      "强调主楼并精简杂乱城市细节",
+      "选取蓝紫暮色与金色楼檐的冷暖对比"
+    ],
+    "preserve": [
+      "黄鹤楼五层宽阔飞檐、攒尖顶、短宝顶",
+      "主楼位于蛇山树木覆盖的丘上",
+      "长江在后景横展，长江大桥向对岸收敛",
+      "非日本佛塔、无日式石灯"
+    ],
+    "techniques": [
+      "暮色实体与阴影分区",
+      "细屋檐轮廓和暖光密度",
+      "远城空气透视与明暗主次"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm",
+    "source_image": "https://uav.xinhuanet.com/2021-07/14/1211239344_16261727700621n.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nWuhan Yellow Crane Tower, China, viewed slightly above the wooded Snake Hill towards the Yangtze and the real Wuhan Yangtze River Bridge, as the identity/spatial reference shows. Yellow Crane Tower is the strong foreground focus at right-of-centre: FIVE STOREYS of broad outward-sweeping Chinese golden tiled eaves, reddish pillars, stout stacked pavilion body narrowing upward, complex octagonal/compound roof plan, short ornate finial; not a slender Japanese pagoda with long sorin spire. The tower sits on a densely wooded hill ABOVE the city, not on an invented pond. Behind it the Yangtze crosses the upper-middle of the frame; the Wuhan Yangtze River Bridge recedes diagonally from mid-left towards the opposite bank, with modest distant Wuhan skyline and low hills. New artistic composition with tower slightly larger and surrounding ordinary city blocks simplified, delicate violet-blue dusk, gold roofs and select window lights, warm thin clouds, deep forest foreground and muted silver-lavender river. Beautiful quiet layered evening, not oversaturated tourist light show. No cherry trees, stone lanterns, torii, Mount Fuji, Kyoto roof templates or fantasy riverfront temple. Tiny circular dot lattice preserves each major roof tier and the bridge perspective; restrained distant architecture.",
+    "image": "wuhan-yellow-crane/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "e3a2bb89b547670a632539dfd14286cfe7e042bb8b4f76f13735946d39d5ef03",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://uav.xinhuanet.com/2021-07/14/c_1211239344.htm",
+        "image_url": "https://uav.xinhuanet.com/2021-07/14/1211239344_16261727700621n.jpg",
+        "sha256": "5227bf86ea53578c1a26c353ff34c4a4e80f453a615ee7e95ce947bbd9f01306"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "qinhuai-lanterns",
+    "base": "lantern-lake",
+    "title": "南京白鹭洲 · 秦淮灯影",
+    "description": "园林湖湾、桥与沿岸灯组，在深蓝水面中形成暖光节奏。",
+    "art_direction": "提炼白鹭洲秦淮灯会的曲折湖湾、近桥与沿岸灯组，以有主次的暖光簇和暗水留白组织夜景。",
+    "creative_changes": [
+      "减少拥挤灯组，留下清楚的暖光主次",
+      "强化蓝调夜空与湖面深色层次"
+    ],
+    "preserve": [
+      "曲折园林湖湾和水道",
+      "桥横跨窄水口",
+      "沿岸真实灯组而非升空放灯",
+      "园林与远城，不造群山"
+    ],
+    "techniques": [
+      "发光本体与局部光晕",
+      "水域限定的碎亮倒影",
+      "暗树冠与暖灯簇的密度对比"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0.3,
+            0.43
+          ],
+          [
+            0.39,
+            0.41
+          ],
+          [
+            0.39,
+            0.49
+          ],
+          [
+            0.46,
+            0.51
+          ],
+          [
+            0.46,
+            0.56
+          ],
+          [
+            0.37,
+            0.55
+          ],
+          [
+            0.29,
+            0.5
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/c.html?page=4",
+    "source_image": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/202501228b2c7b2003574f2290737c88f2221962_20250122b72a9cbac61d40f18e1f9abba7af4c62.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nNanjing Bailuzhou Park Qinhuai Lantern Festival. Slightly elevated wide view over a winding Chinese garden LAKE BAY and narrow canal, with a small bridge crossing a narrow mouth near lower middle, dark tree islands and white/grey tiled garden buildings around the banks, modest distant city skyline. Lantern GROUPS are positioned on BANKS as real festival displays and lit building eaves; not flying sky lanterns, boats of people releasing lights or a wild mountain lake. Art-direct serene richly layered festival night: deep midnight blue water with generous calm dark areas, selective warm amber/red bankside light clusters, a restrained small cyan accent, soft indigo sky. Avoid visual clutter by focusing on bridge and three principal bank-light clusters; real winding shoreline remains clear. Render glowing lamp cores as small dense cream dots, local halos only a few grid cells, cool faint dots in dark water and broken horizontal highlights directly under corresponding lamps. No Indian ghats, Li River karst mountains, dragon-scale overload, fireworks, lettering or temple relocation.",
+    "image": "qinhuai-lanterns/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "74ee2f609a05d7b7470d5c3e47adec4657605048e1136243d3c3b04f5d410656",
+    "image_dimensions": [
+      1672,
+      940
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/c.html?page=4",
+        "image_url": "https://www.xinhuanet.com/photo/20250122/8b2c7b2003574f2290737c88f2221962/202501228b2c7b2003574f2290737c88f2221962_20250122b72a9cbac61d40f18e1f9abba7af4c62.jpg",
+        "sha256": "570c4336d5db46e7631e190feace08fc3f3ac421c3a8be3c5ff863a387591b62"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "shanghai-bund",
+    "base": "marine-drive",
+    "title": "上海外滩 · 浦江夜色",
+    "description": "东方明珠与陆家嘴楼群的光，落入断续的江面倒影。",
+    "art_direction": "用真实外滩望陆家嘴天际线确定主体关系，压低次要楼群和江面杂点，让东方明珠、上海中心与窗光构成节奏。",
+    "creative_changes": [
+      "整理次要窗光，降低建筑底部拥挤感",
+      "保留全景的深色天空与克制紫红/金蓝灯色"
+    ],
+    "preserve": [
+      "东方明珠居左，环球金融中心与上海中心在右侧组团",
+      "依透视保留可见高度关系",
+      "中低层建筑遮挡高楼底部",
+      "黄浦江横贯前景，无凭空弧形车道"
+    ],
+    "techniques": [
+      "城市灯链和远近光点尺度",
+      "对应灯源的碎亮反射",
+      "暖冷灯色与暗天空分层"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0,
+            0.76
+          ],
+          [
+            1,
+            0.76
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_%2841199899084%29.jpg/3840px-Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_%2841199899084%29.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nShanghai Lujiazui night skyline viewed FROM the Bund, across the Huangpu River. Use actual reference skyline relationships: Oriental Pearl Tower on the LEFT with its two principal spheres and needle; dense varied medium towers at the base; Shanghai World Financial Centre with trapezoid opening and twisting tapering Shanghai Tower in the RIGHT group. Visible relative heights follow the photographed perspective, not a schematic tallest-building ranking. Elegant panoramic skyline occupying middle band, generous deep navy sky above, river lower third with corresponding magenta/violet reflections from Pearl and cream/gold/cyan reflections from right towers. Recompose for beautiful clear rhythm and selectively lit window bands, not every building glaring. Opposite bank near horizontal. No foreground curved coastal road, repeated roadside lamps, moon, boats array, Mumbai buildings or random landmarks. Keep recognisable sphere/tower silhouettes as finer dot contours; dense small luminous window dots, low-contrast building surfaces, calm interrupted horizontal reflection marks. Original dot-matrix scenery, no photographer watermark or text.",
+    "image": "shanghai-bund/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "7d79aa3ef0ca5c8d389975315f66fbf8e3556291f9f2ca38a79d1c101ea6374e",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_(41199899084).jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_%2841199899084%29.jpg/3840px-Pudong_night_skyline_viewed_from_the_Bund_in_Shanghai_%2841199899084%29.jpg",
+        "sha256": "b5b28e7fb1f35bfb0991e7fbd68609b705bee4d46baddb907074493eb7eeb36a"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "zhangjiajie-mist",
+    "base": "misty-forest",
+    "title": "张家界天子山 · 雾谷",
+    "description": "不等高的石柱在雾中显隐，近壁与阔叶形成空间层次。",
+    "art_direction": "石柱高低间隙、右侧近壁与阔叶前景取自天子山实景。用更有呼吸的雾谷负空间，强化近深远浅，不造固定柱列。",
+    "creative_changes": [
+      "整理雾谷层次与画幅，保留真实地貌特征",
+      "克制低对比晨雾色调，不添加太阳盘"
+    ],
+    "preserve": [
+      "不等高不等距砂岩石柱",
+      "右侧宽阔近壁与树冠",
+      "阔叶前景",
+      "雾吞没柱基、远脊低对比"
+    ],
+    "techniques": [
+      "远到近遮罩和空气透视",
+      "雾量按谷地与轮廓分布",
+      "近林密点与远柱弱点对比"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nZhangjiajie Wulingyuan Tianzi Mountain, China. Tall slender quartz-sandstone pillars with irregular unequal heights and spacing emerge from cool pale mist; some have tiny tree caps, their bases disappear into the valley. A broad nearer forest-covered rock WALL anchors the RIGHT, dark broadleaf branches lightly frame lower-left, distant ridges barely visible. Compose a fine-art wide landscape with a diagonal open mist corridor and elegant isolated vertical pillars, strong near-to-far atmosphere, generous soft grey-blue negative space, muted pine green close vegetation, subtle slate and ivory dot values. Landscape beauty comes from selective mist depth, not adding random generic peaks. No giant pine trunks, no gold sun disc, no overt sunbeams, no floating rocks, bridge, lake, temple or symmetrical jagged skyline. Soft fog is discrete ordered fine dots, nearest leafy areas richer/darker point clusters and the stone edges remain recognisable. It should look tranquil and expansive, not a flat noisy pattern.",
+    "image": "zhangjiajie-mist/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": [
+        "横幅扩展远柱为实景地貌启发的艺术重构；不宣称某一真实机位的逐峰复原。"
+      ]
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "4c9cedb8fe1eeb62a4d4dd399330c9eeccc8b6e71f3410e2a7d8c59b3e35d8e7",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Rock_formations_emerge_from_the_mist_in_Zhangjiajie.jpg",
+        "sha256": "82752a50cd9275fc071c5636db266eee305cf941836d9827b69d1324147e6dab"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "dameisha-night",
+    "base": "night-coast",
+    "title": "深圳大梅沙 · 羽翼海岸",
+    "description": "七座彩色羽翼人停在沙滩后排，银蓝浪带向远处延伸。",
+    "art_direction": "从实拍确认七座羽翼人的不同姿态和错列位置、左沙右海的关系；选择清楚展示海岸与雕塑的斜俯视，整理人群，并转为克制蓝调夜景。",
+    "creative_changes": [
+      "日间场景转为艺术设定蓝调夜景，非实测夜间灯光",
+      "简化拥挤游客与帐篷，突出雕塑和海岸",
+      "雕塑局部暖反光用于塑造可辨轮廓"
+    ],
+    "preserve": [
+      "七座羽翼人，大小随远近变化、姿态不重复",
+      "雕塑在沙滩后排两组错列，不站水中",
+      "左沙右海和斜向弧形浪线",
+      "人体色彩与金色羽翼的雕塑特征"
+    ],
+    "techniques": [
+      "主体与海水材质遮罩",
+      "冷暗海面与浅色浪带分级",
+      "不同尺度的浪点与雕塑亮部"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0.91,
+            0.39
+          ],
+          [
+            1,
+            0.38
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.96,
+            0.99
+          ],
+          [
+            0.87,
+            0.91
+          ],
+          [
+            0.74,
+            0.82
+          ],
+          [
+            0.59,
+            0.7
+          ],
+          [
+            0.51,
+            0.57
+          ],
+          [
+            0.59,
+            0.52
+          ],
+          [
+            0.75,
+            0.44
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964",
+    "source_image": "https://www.travphotos.cn/picpath/photo/image/2022/10/21/hk_c_1666334809607018850.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nShenzhen Dameisha Beach and the SEVEN Winged People sculptures. Use the evidence photo to verify the actual seven colourful elongated human sculptures with asymmetric GOLDEN feather wings, each in a different leaning/flying pose, grouped in two offset rows on the BACK of the beach. Do not draw four copies or generic angels. Art-direct a beautiful high oblique coastal panorama, sandy beach on LEFT, open sea on RIGHT, curved diagonal foam bands leading into the distance. Reframe a little closer so all SEVEN distinct winged sculptures are recognisable in left-middle, not giant foreground humans standing in water. Simplify the overwhelming crowds and tents to a few tiny distant scale figures, keep the sculpture grouping and distance from water. Artistic BLUE HOUR / early night: deep cobalt sea with silver-blue fine broken waves, muted pearl-violet sand, teal/red/blue/ochre sculptures with warm gold edges on wings, deep hillside/park strip at far back. No lighthouse, huge moon, Mediterranean village, additional monuments, four identical figures, silver wings or arbitrary coastline. Discrete regular tiny circular dots create each body pose and feather silhouette, clustered brighter dots only in waves and wings; luminous but plenty of dark calm water.",
+    "image": "dameisha-night/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": [
+        "七座可辨，姿态有别；未逐座确认全部翼片曲线与四肢角度。"
+      ]
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "4dc6bcde68cb647d326c391b290559ab34ab2ddda9119ae1f2ed5588d4a490df",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.travphotos.cn/travel/detail.jsp?id=52051531&kind=1964",
+        "image_url": "https://www.travphotos.cn/picpath/photo/image/2022/10/21/hk_c_1666334809607018850.jpg",
+        "sha256": "c21f08902ccc8b55eae7c2bf7451f886f1441a07284e26ef9a7f32ee547d303c"
+      },
+      {
+        "role": "补充形态/空间求证",
+        "source_page": "https://www.huitu.com/photo/show/20160615/193603586107.html",
+        "image_url": "https://pic.huitu.com/res/20160615/336725_20160615193603586107_1.jpg",
+        "sha256": "fdef210e76d7e0ce298b2bfa7a25368d70c4af0e068fee6b5f5da973abd9595b"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "sanya-sunset",
+    "base": "ocean-sunset",
+    "title": "三亚湾 · 云隙余晖",
+    "description": "厚云间的一线橙光，将海面与近岸浪花连成层次。",
+    "art_direction": "以三亚湾厚云和明亮云隙为视觉主角，保留两侧远山与近岸浪带，清理平庸曝光，形成克制但有张力的海天光影。",
+    "creative_changes": [
+      "增强云隙冷暖与近岸层次",
+      "简化小人物，去掉与主题无关的细碎干扰"
+    ],
+    "preserve": [
+      "厚云遮日、无完整太阳圆盘",
+      "左右远山轮廓与开阔海湾",
+      "近岸浪带",
+      "光源来自云隙，非刻字巨石景点"
+    ],
+    "techniques": [
+      "天空色场与厚云分层",
+      "海面采样天空光色",
+      "远细近粗的浪峰和碎亮点"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0,
+            0.58
+          ],
+          [
+            1,
+            0.58
+          ],
+          [
+            1,
+            0.73
+          ],
+          [
+            0.6,
+            0.84
+          ],
+          [
+            0,
+            0.94
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://commons.wikimedia.org/wiki/File:三亞灣日落4.jpg",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E4%B8%89%E4%BA%9E%E7%81%A3%E6%97%A5%E8%90%BD4.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nSanya Bay, Hainan China, a cloudy sunset seascape. Thick dark layered cloud mass fills the upper sky, with a narrow luminous amber/apricot opening left-of-centre near horizon, not a complete solar disc. Low distant hills left and a slightly taller far headland on the right frame the expansive bay. Compose an exquisite quiet coastal panorama, elegant silver-blue ocean lower half, a few diagonal near-shore foam lines and wet sand catching muted gold, no clutter. Make the cloud break glow cream/coral against violet-charcoal storm edges, restrained mauve high cloud and cold blue water, light reflections sourced from the actual cloud opening. No carved Tianya Haijiao rocks, palms as framing props, sailing boat, lighthouse, huge moon, or giant sun. Half-tone dots vary with cloud volume, sky smooth low-frequency ordered values, water broken horizontally, near foam crisp fine pearl points. Strong negative space and coherent limited palette, no orange wash across everything.",
+    "image": "sanya-sunset/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "59fcca8d7102fe1aab5ee0cf73daa0d4fdad6e9a3b95bfbf42c0a5a6c12c9098",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://commons.wikimedia.org/wiki/File:三亞灣日落4.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/%E4%B8%89%E4%BA%9E%E7%81%A3%E6%97%A5%E8%90%BD4.jpg",
+        "sha256": "b1127e58b220d7fe684aedb17f44b49c9692d5650767ad3dfe1e8112729e13e9"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "hulunbuir-storm",
+    "base": "storm-plains",
+    "title": "呼伦贝尔 · 风暴前缘",
+    "description": "厚云压过低平田野，雨幡透出远处暖光。",
+    "art_direction": "采用实际厚云、雨幡、公路与电杆关系，强调天空巨大体积和低平地景的尺度；不用普通牧马落日冒充雷暴。",
+    "creative_changes": [
+      "强化云体亮暗分面与温暖雨幕后景",
+      "精简路边杂物，不改变公路与电杆透视"
+    ],
+    "preserve": [
+      "多层弧状厚云与暗卷层",
+      "右侧纵向半透明雨幡",
+      "中左向右下展开的真实公路",
+      "右侧电杆与斜向电线",
+      "不添加照片未见闪电或农舍"
+    ],
+    "techniques": [
+      "云体法线明暗与亮云缘",
+      "雨幕半透明衰减和纵纹",
+      "巨大云体对比低平田野"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www.photoworld.com.cn/post/144452",
+    "source_image": "https://image.photoworld.com.cn/wp-content/uploads/2021/04/%E6%9C%80%E7%88%B1%E5%9D%8F%E5%A4%A9%E6%B0%94-04-640x360.jpeg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nHulunbuir grassland, Inner Mongolia China, based on the photographed 2020-08-01 arc-shaped storm cloud and rain curtain. Vast layered rolling storm front dominates upper EIGHTY percent of wide frame, low flat deep-green fields at bottom. Real narrow paved rural road recedes from lower-right towards centre-left on horizon, fence posts left, utility poles and diagonal wires on right; preserve these real perspective elements, not a farmhouse or windmill. Volumetric curled cloud shelves: deep indigo charcoal on left and underneath, upper-right pearly warm light, broken scud edges, broad translucent vertical rain curtain on RIGHT with pale ochre light behind it. Compose a cinematic magnificent but restrained weather landscape, luminous cloud edges and layered dark recesses, elegant tiny road lead-in and no foreground horses. No invented lightning bolt, distant giant mountains, gold wheat ears, tornado, barn or African tree. Cloud volume expressed by dense dark/slate/cream circular dot fields with ordered gradients; rain uses delicate vertical density veils, sharp road and pole contours. Avoid uniform grey noise.",
+    "image": "hulunbuir-storm/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "81170eee6605151c2f7c4ea2ffeb57a9054f77e836aba173434d089ba0273f33",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.photoworld.com.cn/post/144452",
+        "image_url": "https://image.photoworld.com.cn/wp-content/uploads/2021/04/%E6%9C%80%E7%88%B1%E5%9D%8F%E5%A4%A9%E6%B0%94-04-640x360.jpeg",
+        "sha256": "2579e4aa99598c06cfa612f4edbe22f14f6c4b87ba31adf8f25fd845cc73ab9a"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "beihai-dawn",
+    "base": "taj-dawn",
+    "title": "北京北海 · 白塔晨光",
+    "description": "暖光掠过白塔，岛丘树影与临水长廊分出三层。",
+    "art_direction": "白塔、林木岛丘和低位长廊的真实上下关系是主轴。将竖幅证据重新组织为风景画幅，控制留白与侧光，不沿用泰姬陵水渠。",
+    "creative_changes": [
+      "横幅重新取景，塔身比例保持",
+      "采用克制清晨冷暖侧光",
+      "简化不清楚湖面纹理，不宣称水或冰的实测状态"
+    ],
+    "preserve": [
+      "瓶形白塔与短金顶饰，非洋葱穹顶",
+      "白塔位于林木覆盖的琼华岛丘顶",
+      "临水长廊位置明显低于塔和岛丘",
+      "湖面/平静表面的竖向对应反射"
+    ],
+    "techniques": [
+      "白色材质的明暗体积",
+      "高光压缩保留细节",
+      "岸线限定的冷色反射"
+    ],
+    "motion": {
+      "type": "still"
+    },
+    "source_page": "https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/",
+    "source_image": "https://images.pexels.com/photos/14752023/pexels-photo-14752023.jpeg?auto=compress&cs=tinysrgb&w=2400",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nBeijing Beihai Park, White Dagoba on Qionghua Island. Recognisable Tibetan-style WHITE BOTTLE-SHAPED stupa high atop a wooded island mound, broad curved white belly below a slender ringed upper shaft and small gold crown, layered stone base partly hidden by trees. The green-grey tiled, red-columned long lakeside gallery sits much LOWER along the shore beneath the island trees. Calm lake / reflective still surface in foreground. Create an elegant wide dawn panorama: tower slightly off-centre, dark layered island foliage, low continuous gallery, blue clear-to-pale sky with generous negative space, warm champagne side-light on white curved belly and red columns, cool shadow faces, subdued ivory vertical reflection. No giant pink cloud, no visible sun, no heavy invented fog, no Taj Mahal domes/minarets, symmetrical axial canal, generic Chinese pagoda substitution or tower growing directly from shore. Preserve the structure relationships while recomposing the portrait evidence into a balanced wide landscape. Highlights held to detailed dot values, never solid flat white; the lakeside gallery readable as horizontal rhythm of small warm points.",
+    "image": "beihai-dawn/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": [
+        "参考反射表面水/薄冰状态未确认；本例保持静态，不加入水纹。"
+      ]
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "static",
+    "image_sha256": "861f35e2b418cb90bf845ad7a322e1b74bb844df1f27047b84decfb282d878fb",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.pexels.com/photo/monument-reflecting-in-a-lake-14752023/",
+        "image_url": "https://images.pexels.com/photos/14752023/pexels-photo-14752023.jpeg?auto=compress&cs=tinysrgb&w=2400",
+        "sha256": "edc1c4b954582d84fe3a02efea27c7311e78d5ee0f4ff69ac4d82372b7fbc9ca"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "mongkok-rain",
+    "base": "tokyo-rain",
+    "title": "香港旺角 · 雨中市集",
+    "description": "层叠篷布、密集立面与伞群，在湿路上留下冷暖反光。",
+    "art_direction": "保留旺角雨夜市集的高机位、密集住宅、篷布与窄通道。重组为有纵深的横幅，以青蓝环境和少量暖摊灯突出市井层次。",
+    "creative_changes": [
+      "横幅重构局部街区视角，不当作精确街道复原",
+      "整理杂乱立面与不可辨招牌",
+      "强化湿路与篷布的冷暖主次"
+    ],
+    "preserve": [
+      "香港旺角市集范围，街名不详",
+      "高机位望向窄通道，非东京地面空巷",
+      "密集住宅立面、冷色层叠篷布和多把伞",
+      "湿路反光与摊位暖灯对应"
+    ],
+    "techniques": [
+      "深度遮挡与透视收敛",
+      "湿路反射的横向扰动与打断",
+      "篷布/窗格/伞群不同密度"
+    ],
+    "motion": {
+      "type": "rain",
+      "regions": [
+        [
+          [
+            0.35,
+            0.91
+          ],
+          [
+            0.45,
+            0.76
+          ],
+          [
+            0.6,
+            0.57
+          ],
+          [
+            0.73,
+            0.42
+          ],
+          [
+            0.74,
+            0.48
+          ],
+          [
+            0.63,
+            0.62
+          ],
+          [
+            0.53,
+            0.79
+          ],
+          [
+            0.5,
+            1
+          ],
+          [
+            0.34,
+            1
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://px3.fr/winners/hm/2024/1-114188-24/",
+    "source_image": "https://s3-us-west-2.amazonaws.com/px3fr/upload/3278419/1-114188-24/full/f16f3a8eede861388359b535f8d9dc57.jpg",
+    "prompt": "Use case: stylized-concept. Create ONE finished, exceptionally beautiful original Chinese landscape artwork for a public gallery of dot-matrix scenery. Landscape wide 16:9. The first reference is EVIDENCE for landmark identity, real forms, core elements and spatial relationships; it is not an aesthetic template to blindly copy. The final reference screenshot is STYLE ONLY: use the artwork rectangle, NEVER the lighthouse, moon, webpage or words. Art-direct a polished landscape with hierarchy, depth, deliberate negative space, restrained luminous accents, smooth value transitions and coherent light. Beautification and reframing are intended, without changing landmark identity or inventing foreign buildings. Every visible mark should be a discrete circular dot on a rigorously regular square lattice about 240 columns, with size/density and limited color creating volume. Fine quiet dots, black/navy visible gaps even in highlights, thin contour details preserved. Distinct mark handling for sky, vegetation, architecture/terrain and water, not a uniform noise filter. Not square pixels, not brush strokes, not pointillist random scatter, not continuous painted surfaces. Entire frame is artwork; NO text, labels, caption, borders, interface, logo, signature or watermark. Do not copy a photographer's exact framing, graphic treatment or watermark; create a new composition from the verified place and the art direction below. Do not bring objects from the style reference.\n\nHong Kong Mong Kok rainy market, verified high-angle view of dense apartment facades, many window and air-conditioner grids, overlapping turquoise/blue stall awnings, narrow wet market passage below and multiple umbrellas, warm small stall lights. The exact street is unknown; do not label it. Recompose into an immersive wide cinematic HIGH VIEW along the diagonal passage, densely layered buildings on both sides, blue-green awnings forming a stepping rhythm and a clear vanishing route for the eye, wet dark pavement reflecting amber and teal light. Preserve Hong Kong ordinary dense residential character, not a Tokyo neon alley, no Japanese shop signs, torii, paper lantern rows, vending-machine wall or lone walker in empty street. Beautiful rain-night balance: cool ink blue/teal atmosphere, small cream amber light pools, deep facades with selective warm window points, tiny umbrellas at human scale, light fine rain without overwhelming the view. Do not generate readable gibberish logos; signage abstract and subdued. Dot lattice handles repetitive window texture quietly, awning silhouettes clearly, water reflection broken and locally bright; no uniform bright noise.",
+    "image": "mongkok-rain/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": [
+        "旺角市集主题已核实；具体街名、商户及逐窗身份未知，不作精确街道复原。"
+      ]
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "bfcce29da35f62afaaa2270f63445affa32fb395f7f97c10d4178cb984d74340",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://px3.fr/winners/hm/2024/1-114188-24/",
+        "image_url": "https://s3-us-west-2.amazonaws.com/px3fr/upload/3278419/1-114188-24/full/f16f3a8eede861388359b535f8d9dc57.jpg",
+        "sha256": "2753117404c1e7b23a54f8baf63727d5ab4cac60aac253745cbbd9342e47285b"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  },
+  {
+    "id": "shenzhen-bay",
+    "base": "varanasi-ghats",
+    "title": "深圳湾文化广场 · 暮色原石",
+    "description": "原石建筑、春笋与春茧相互呼应，折岸暖光映入水面。",
+    "art_direction": "以已核实的原石建筑肩部、地标关系、宽园地和折岸为内容依据；选更完整的天际线与蓝调暮色，将原石作为近中景主角。",
+    "creative_changes": [
+      "扩大视野让春笋尖顶完整入画",
+      "采用蓝紫暮色与克制金色灯光",
+      "精简次要楼群，强化白色体量和暗绿园地对比"
+    ],
+    "preserve": [
+      "文化广场白色非对称原石建筑在左前",
+      "春笋位于其右后，春茧更右侧后景",
+      "宽园地隔开原石建筑与大水面",
+      "多级折岸与弧形观景平台"
+    ],
+    "techniques": [
+      "暮色冷暗层次与暖光簇",
+      "石材/园地/建筑材质分区",
+      "对应岸灯的断续水面反射"
+    ],
+    "motion": {
+      "type": "water",
+      "regions": [
+        [
+          [
+            0.79,
+            0.74
+          ],
+          [
+            1,
+            0.67
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.33,
+            1
+          ],
+          [
+            0.5,
+            0.88
+          ],
+          [
+            0.61,
+            0.81
+          ],
+          [
+            0.7,
+            0.78
+          ]
+        ]
+      ]
+    },
+    "source_page": "https://www.i-mad.com/zh/projects/shenzhen-bay-culture-park",
+    "source_image": "https://cdn.sanity.io/images/2d8zs6ec/production/33126a1deddc4eb157690fa12aa7b3cdbeee9d55-3000x1942.jpg?w=2000",
+    "prompt": "Create one exceptionally beautiful original landscape artwork of Shenzhen Bay Culture Square / Talent Park, China. Reference 1 is architectural identity + real spatial relations, reference 2 is a wider actual view so the entire Spring Bamboo tower is visible. Reference 3 is STYLE ONLY: extract the artwork rectangle's tiny orderly circular dot-matrix / halftone marks on black, NOT its lighthouse or webpage. Compose a refined cinematic wide 16:9 twilight panorama, slightly elevated overlooking the park and water. The Culture Square white granite pebble buildings form a substantial recognisable cluster in the LEFT third: tall asymmetric standing smooth stone with an oblique shoulder, adjacent low flattened long horizontal stones, smaller tilted stone volumes, grass roof slopes and recessed dark glass; never turn them into generic hemispheres. Behind it, China Resources 'Spring Bamboo' tower near centre-right is a slender tapered rounded tower with full tip inside frame; Spring Cocoon sports centre is low and long with white lattice at the far right background. Modern Houhai towers are restrained supporting silhouettes, not a wall of clutter. Wide green park clearly separates the white cultural buildings from the water. Real multi-level angular stepped shoreline leads diagonally across the lower half into a circular viewing platform at right; the water occupies lower-right, not an invented river around the buildings. BEAUTIFICATION: deliberate hierarchy, taller stone lit softly in pearl lavender against deep forest green, restrained gold windows and shoreline, delicate rose-violet blue-hour sky, crisp architecture with generous dark breathing room, luminous broken vertical reflections tied to actual lights. All visible marks are discrete circular dots aligned to a perfectly regular square grid about 240 columns; size/density and local value produce volume. Maintain visible dark gaps even in white buildings. Small quiet dot scale like the style image; no continuous painted surfaces, no blur, no random grain, no lines connecting dots. Separate dot treatments for smooth stone, dark foliage, sky and fragmented water. Entire image is artwork, no text, title, UI, border, logo or watermark. Do not include temple, pagoda, bridge, lighthouse, red Indian shore or unverified monumental sculpture. Artistic twilight and edited framing are intended, architecture and relative landmark positions are the evidence constraint.",
+    "image": "shenzhen-bay/image.png",
+    "source_verified": true,
+    "render_status": "generated",
+    "visual_review": {
+      "status": "reviewed",
+      "date": "2026-10-09",
+      "result": "一次独立静帧复核未发现明显的核心地标身份、主要空间或主体数量错误；非测绘级准确性承诺。",
+      "limits": []
+    },
+    "medium": "AI生成的点阵风景艺术，非现场摄影或测绘复原",
+    "animation_status": "local-overlay",
+    "image_sha256": "82622cf481ea2d8d4aee9ae9a0d291763a30ff94c62cf18fde001c7f83e68209",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "generator": "OpenAI image generation tool",
+    "reference_inputs": [
+      {
+        "role": "主题/地标/空间求证",
+        "source_page": "https://www.i-mad.com/zh/projects/shenzhen-bay-culture-park",
+        "image_url": "https://cdn.sanity.io/images/2d8zs6ec/production/33126a1deddc4eb157690fa12aa7b3cdbeee9d55-3000x1942.jpg?w=2000",
+        "sha256": "2179250746f1774d59f54ecdd08198b1e074f4253e76d4b5cb193870f47b6a57"
+      },
+      {
+        "role": "补充形态/空间求证",
+        "source_page": "https://www.gooood.cn/shenzhen-bay-cultural-square-by-mad.htm",
+        "image_url": "https://oss.gooood.cn/uploads/2025/09/001-shenzhen-bay-cultural-square-by-mad-960x694.jpg",
+        "sha256": "87cca55300a1f56c72a64a678c2d15a159f35f6653a149d66a93b04b7c4dc210"
+      },
+      {
+        "role": "风格参考",
+        "source_page": "https://ascii.rest/",
+        "description": "用户提供的night-coast网页截图，仅提取点阵绘制表现，不带灯塔、月亮或网页文字；截图不随包分发。"
+      }
+    ]
+  }
+]

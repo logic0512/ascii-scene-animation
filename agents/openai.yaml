@@ -1,0 +1,4 @@
+interface:
+  display_name: "实景点阵风景"
+  short_description: "先求证主题与地标，再设计好看的取景和光影，借鉴十五组技法生成点阵风景及动画"
+  default_prompt: "使用 $ascii-scene-animation，根据我给的地点或图片确认主题与真实要素，选择好看的取景和光影，应用合适的点阵绘制方法；上传图默认忠实转绘，地点创作记录艺术化改变。"

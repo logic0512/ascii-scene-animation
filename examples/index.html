@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="十五幅中国主题点阵风景，查看作品、创作取舍与实景依据。">
+  <title>中国风景 · 点阵画廊</title>
+  <link rel="stylesheet" href="./gallery.css">
+  <script type="module" src="./gallery.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#current-work">跳到当前作品</a>
+  <header class="page-header">
+    <a class="brand" href="./">点阵风景 <span>landscapes in dots</span></a>
+    <a class="collection-link" href="#collection">浏览全部作品 <span id="total-count"></span></a>
+  </header>
+  <main>
+    <section id="current-work" class="current-work" aria-labelledby="work-title">
+      <div class="work-heading">
+        <div>
+          <p class="eyebrow" id="work-base">中国风景 / 点阵转绘</p>
+          <h1 id="work-title" tabindex="-1">作品载入中</h1>
+        </div>
+        <nav class="work-navigation" aria-label="切换作品">
+          <span class="counter" id="position">— / —</span>
+          <button id="previous" type="button" disabled aria-label="上一张">←</button>
+          <button id="next" type="button" disabled aria-label="下一张">→</button>
+        </nav>
+      </div>
+      <div class="artwork">
+        <div class="stage" id="stage" hidden>
+          <img id="main-image" alt="" decoding="async">
+          <canvas id="environment" aria-hidden="true" hidden></canvas>
+        </div>
+        <p class="image-status" id="image-status" role="status">正在读取作品目录…</p>
+      </div>
+      <div class="work-footer">
+        <p class="description" id="work-description"></p>
+        <a id="download" class="download" aria-disabled="true">下载 PNG <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="motion-bar">
+        <p id="motion-label">静态点阵作品</p>
+        <div class="motion-actions">
+          <button id="motion-toggle" type="button" disabled aria-pressed="false">播放环境动效</button>
+          <button id="motion-reset" type="button" disabled>重置</button>
+        </div>
+      </div>
+      <details id="creation-details" class="creation-details">
+        <summary>内容核实与美化取舍 <span aria-hidden="true">＋</span></summary>
+        <div class="detail-grid">
+          <section><h2>场景与要素</h2><div id="preserve"></div><a id="source-link" target="_blank" rel="noopener noreferrer" hidden>查看实景依据 ↗</a></section>
+          <section><h2>美化取舍</h2><div id="art-direction"></div><div id="creative-changes"></div></section>
+          <section><h2>绘制方法</h2><div id="techniques"></div><p class="detail-note">借鉴绘制方法与表现重点，场景内容以本作品主题为准。</p></section>
+        </div>
+      </details>
+    </section>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="collection-heading"><h2 id="collection-title">风景集</h2><p>选择一幅，慢慢看。</p></div>
+      <p id="collection-status" role="status"></p>
+      <div id="cards" class="cards"></div>
+    </section>
+  </main>
+  <footer class="page-footer"><p>AI生成／非实拍。环境动效仅为局部展示，PNG 下载为静态作品。</p><a href="../SKILL.md">查看 Skill</a></footer>
+  <noscript><p class="noscript">请启用 JavaScript 以读取作品目录、切换作品和下载图片。</p></noscript>
+</body>
+</html>
